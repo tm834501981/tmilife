@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-sm-4">
+        <input type="text" placeholder="搜索标题"
+               ng-model="search" class="form-control">
+    </div>
+    <div class="col-sm-4">
+        <select name="" ng-model="orderByType" class="form-control">
+            <option value="title" ng-selected="true">书名</option>
+            <option value="author">作者</option>
+            <option value="price">价格</option>
+            <option value="pudate">日期</option>
+        </select>
+    </div>
+    <div class="col-sm-4">
+        <a class="btn btn-primary" ng-href="#/carList">查看购物车 <span class="badge" style="background-color: red">{{carDataNum}}</span></a>
+        <a ng-show="isUser.isLogin"
+           class="btn btn-primary"
+           ng-click="loginOut()"
+        >
+            登出
+        </a>
+        <a ng-href="#/login"
+           ng-show="!isUser.isLogin"
+           class="btn btn-primary">
+            登录
+        </a>
+
+
+    </div>
+</div>
+<p></p>
+<div class="row">
+    <ul class="list-group">
+        <li class="list-group-item"
+            ng-repeat="book in books | filter:{title:search} | orderBy:orderByType">
+            <div class="row">
+                <a ng-href="#/bookDetail/{{book.id}}">
+                    <div class="col-sm-4">
+                        <img ng-src="{{IMAGEURL + book.images[0].image_name}}" alt=""
+                             class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="col-sm-8">
+                        <blockquote>
+                            <h1>{{book.title}}</h1>
+                            <footer>{{book.author}}</footer>
+                            <p>{{book.price}}</p>
+                            <p>{{book.pudate * 1000 | date:"yyyy-MM-dd HH:mm:ss"}}</p> <!-- 时间更加精准 -->
+                        </blockquote>
+                    </div>
+                </a>
+                <div class="text-right" style="padding-right: 50px;">
+                    <button class="btn btn-danger" ng-click="addCar(book)">添加购物车</button>
+                </div>
+            </div>
+
+        </li>
+    </ul>
+</div>

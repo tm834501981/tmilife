@@ -1,0 +1,102 @@
+/**********页面侧边栏********/
+/**********
+小于768px
+***********/
+@media screen and (max-width:768px){
+	aside{
+	
+	}
+	aside div{
+		width:100%;
+	}
+	aside a{
+		display: inline-block;
+		width:20%;
+		float:left;
+		background:#191919;
+		text-align:center;
+		color:#808080;
+		font:12px '微软雅黑';
+	}
+	.aside{
+		font-family: 'myfont';
+		color:#808080;
+		font-size: 30px;
+		
+	}
+	aside a span img:nth-of-type(2){
+		width:30px;
+		height:30px;
+	}
+	aside a span img:nth-of-type(1){
+		width:20px;
+		height:20px;
+	}
+}
+/**********
+大于768px
+***********/
+@media screen and (min-width:768px){
+	 aside>div{
+		position:fixed;
+		top:30%;
+		right:0;
+		z-index:1000;
+		width:80px;
+	}
+	.aside{
+		font-family: 'myfont';
+		color:white;
+		font-size: 30px;
+		
+	}
+	aside a{
+		display: inline-block;
+		width:80px;
+		height:80px;
+		background:#333333;
+		text-align:center;
+		color:white;
+		font:15px '微软雅黑';
+		float:none;
+		margin-top:10px;
+	}
+	aside a span img{
+		width:30px;
+		height:30px;
+	}
+	aside a span{
+		display: inline-block;
+		margin-top: 10px;
+	}
+	aside a span p{
+		display: inline-block;
+		margin-top:10px;
+	}
+}
+/**********
+侧边栏颜色
+***********/
+aside a:nth-child(1):hover,aside a:nth-child(1):hover .aside{
+	background:#D9272D;
+	color:white;
+}
+aside a:nth-child(2):hover,aside a:nth-child(2):hover .aside{
+	background:#853592;
+	color:white;
+}
+aside a:nth-child(4):hover,aside a:nth-child(4):hover .aside{
+	background:#FFD24F;
+	color:white;
+}
+aside a:nth-child(6):hover{
+	background:#333333;
+	color:white;
+}
+aside a:nth-child(3):hover{
+	color:white;
+}
+aside a:nth-child(5):hover,aside a:nth-child(5):hover .aside{
+	background:#00A8CE;
+	color:white;
+}

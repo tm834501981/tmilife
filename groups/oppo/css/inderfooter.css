@@ -1,0 +1,265 @@
+/***************底部**************/
+footer{
+	width:100%;
+	padding-bottom:20px;
+	border-bottom:1px solid #EDEDED;
+}
+/*********
+	底部三个图标
+***********/
+footer>div{
+	width:1230px;
+	margin:30px auto;
+}
+footer>div>a{
+	margin:50px 1%;
+	float:left;
+}
+.footeroppo{	
+	background-color:#2AAD6F;
+}
+.footercolor{
+	background-color:#EDEDED;
+}
+.footersame{
+	box-sizing:border-box;
+	display:inline-block;
+	width:385px;
+	height:115px;
+}
+.footersame img{
+	padding:30px 50px;
+	float:left;
+}
+.footersame span{
+	font:bold 20px/100px '微软雅黑';
+	color:white;
+	float:right;
+	padding-right:30px;
+}
+.footercolor span{
+	color:black;
+}
+.footeroppo:hover{
+	background-color:#47B488;
+}
+.footercolor:hover{
+	background-color:#CCCCCC;
+}
+/*************
+	底部导航
+****************/
+.ulli{
+	width:230px;
+	float:left;
+}
+.ulli ul li a{
+	display:inline-block;
+	font: 16px '微软雅黑';
+	color:#7C7C7C;
+	margin-left:20%;
+	padding-top:10px;
+}
+.ulli ul li:first-child a{
+	margin:20px 20%; 
+	font:bold 20px '微软雅黑';
+	color:#1F8657;
+}
+.ulli ul li a:hover{
+	 color:#1F8657;
+}
+/*********最底部关注****************/
+.content{
+	padding:20px 0px;
+	width:100%;
+	height:100px;
+	border-bottom:1px solid #EDEDED;	
+	position:relative;
+}
+.content>div{
+	overflow:hidden;
+	width:1200px;
+	margin:0 auto;
+}
+.content>div>div{
+	float:left;
+}
+.ctleft{
+	box-sizing:border-box;
+
+}
+.ctleft span{
+	display:inline-block;
+}
+.ctleft span a{
+	display:inline-block;
+}
+.ctleft>a:hover span{
+	color:#2AAD6F;
+}
+.content span{
+	font:16px/80px '微软雅黑';
+	color:#7B7B7B;
+	margin-left:10px;
+}
+/*********
+	左边微信微博关注部分
+**********/
+.wb:hover .wxpng{
+	display:block;
+}
+.wxpng{
+	position:absolute;
+	top:-100px;
+	left:150px;
+	display:none;
+	z-index:10;
+}
+.content .wx{
+	margin-top:20px;
+	width:50px;
+	height:50px;
+	background-color:#2AAD6F;
+	border-radius:5px;
+}
+.content .wb{
+	margin-top:20px;
+	width:50px;
+	height:50px;
+	background-color:#2AAD6F;
+	border-radius:5px;
+	margin-left:10px;
+}
+.content a{
+	cursor:pointer;
+}
+.wb:hover,.wx:hover{
+	background:#47B488;
+}
+.wb>div{
+	margin-top:10px;
+	border:30px;
+	height:30px;
+	background-image:url('../images/map.png');
+	background-position:-117px -350px;
+}
+.wx>div{
+	margin-top:10px;
+	border:30px;
+	height:30px;
+	background-image:url('../images/map.png');
+	background-position:-117px -241px;
+}
+/*********
+	右边客服部分
+**********/
+.ctrobot{
+	margin-top:10px;
+	margin-left:15%;
+	height:80px;
+}
+
+.online{
+	display:inline-block;
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	background:#2AAD6F;
+	overflow: hidden;
+	float:left;
+}
+.onlineright{
+	margin-left:50px;
+}
+.onlinehelp{
+	width:250px;
+}
+.onlinehelp a span{
+	width:200px;
+}
+.online>div{
+	margin-top:10px;
+	margin-left:5px;
+	width:50px;
+	height:50px;
+	
+}
+.onlineleft>div{
+	background:url('../images/map.png') -426px -790px;
+}
+.onlineright>div{
+	background:url('../images/map.png') -420px -10px;
+}
+.ctrobot>div{
+	float:left;
+}
+.gt{
+	margin-left:10px;
+	display:inline-block;
+	font:bold 20px '微软雅黑' ;
+	color:#1F8657;
+	background:url('../images/map.png') -106px -695px;
+}
+.ctrobot span{
+	font:16px '微软雅黑';
+	color:#393939;
+}
+/**************版权信息********************/
+.copyright{
+	height:200px;
+	width:100%;
+}
+.copyright>span{
+	display:inline-block;
+	margin-top:20px;
+	margin-left:3%;
+	font:12px '微软雅黑';
+	color:#808080;
+}
+.copyright img{
+	margin-left:20px;
+	vertical-align: top;
+}
+/**************右边固定链接***************/
+.ftbottom{
+	position:fixed;
+	bottom:80px;
+	right:10px;
+	width:40px;
+	height:40px;
+	background:#EDEDED url('../images/jian.png') no-repeat 10px 10px;
+}
+.pen{
+	position:fixed;
+	bottom:30px;
+	right:10px;
+	width:40px;
+	height:40px;
+	background:#EDEDED url('../images/pen.png') no-repeat 10px 10px;
+}
+.ftbottom:hover{
+	width:130px;
+	background:#47B488 url('../images/jian1.png') no-repeat 100px 10px;
+}
+.ftbottom span{
+	font:bold 16px/40px '微软雅黑';
+	color:white;
+	display:none;
+}
+.ftbottom:hover span{
+	margin-left:10px;
+	display:block;
+}
+.pen:hover{
+	width:130px;
+	background:#47B488 url('../images/pen1.png') no-repeat 100px 10px;
+}
+.pen span{
+	font:bold 16px/40px '微软雅黑';
+	color:white;
+	display:none;
+}
+.pen:hover span{
+	margin-left:10px;
+	display:block;
+}

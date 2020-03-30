@@ -1,0 +1,54 @@
+html{
+	color:#000;
+	background:#FFF;
+}
+*{
+	box-sizing:border-box;
+}
+body, div, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, pre, code,form, fieldset, legend, input, button,textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+
+}
+fieldset, img{
+	border:0;
+}
+input,select,textarea{
+	outline:none;
+}
+textarea{
+	resize:none;
+}
+a{
+	text-decoration:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,i {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,
+ul {
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+/* 清除浮动*/
+.clearfix{
+	clear:both
+}

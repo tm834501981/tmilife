@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+</head>
+<body>
+	<form action="" onsubmit="return check()">
+		<table>
+			<tr>
+				<td><label for="uname">用户名:</label></td>
+				<td>
+					<input type="text" name="uname" value="" placeholder="" id="uname">
+				</td>
+				<td>
+					<img src="./images/right.png" alt="">
+				</td>
+				<td>
+					字母开头6-12位
+				</td>
+			</tr>
+			<tr>
+				<td><label for="pwd">密码:</label></td>
+				<td><input type="password" name="pwd" value="" placeholder="" id="pwd"></td>
+				<td>
+					<img src="./images/right.png" alt="">
+				</td>
+				<td>
+					6-12位
+				</td>
+			</tr>
+			<tr>
+				<td><label for="rpwd">重复密码:</label></td>
+				<td><input type="password" name="rpwd" value="" placeholder="" id="rpwd"></td>
+				<td>
+					<img src="./images/right.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="tel">电话:</label></td>
+				<td><input type="text" name="tel" value="" placeholder="" id="tel"></td>
+				<td>
+					<img src="./images/right.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="ema">邮箱:</label></td>
+				<td><input type="text" name="ema" value="" placeholder="" id="ema"></td>
+				<td> 
+					<img src="./images/right.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button class="button">提 交</button>
+					<a href="index.html" class="button">回到首页</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<script>
+		function check(){
+			var all = document.getElementsByTagName('input');
+			var img = document.getElementsByTagName('img');
+			var ad = all[0].value;
+			var pw = all[1].value;
+			var rpw = all[2].value;
+			var te = all[3].value;
+			var em = all[4].value;
+			// 验证用户名
+			var adr = /^[a-zA-Z]\w{5,11}$/;
+			if(adr.test(ad) == false){
+				all[0].value = null;
+				all[0].placeholder="用户名不正确";
+				img[0].style.display = 'none';
+				return false;
+			}else{
+				img[0].style.display = 'block';
+			}
+			// 验证密码
+			var pwr = /(^.{6,12}$)/;
+			if(pwr.test(pw) == false){
+				all[1].value = null;
+				all[1].placeholder="密码不正确";
+				img[1].style.display = 'none';
+				return false;
+			}else{
+				img[1].style.display = 'block';
+			}
+			// 验证重复密码
+			
+			if(pw == rpw && rpw != "" && pwr.test(pw) == true){
+				img[2].style.display = 'block';
+			}else{
+				all[2].value = null;
+				all[2].placeholder="重复密码不正确";
+				img[2].style.display = 'none';
+				return false;
+			}
+
+			// 验证电话
+			var telr = /1\d{10}$/;
+			if(telr.test(te) == false){
+				all[3].value = null;
+				all[3].placeholder="电话号码不正确";
+				img[3].style.display = 'none';
+				return false;
+			}else{
+				img[3].style.display = 'block';
+			}
+			// 验证邮箱
+			var emr = /^\w+@\w+\.(com|cn|gov)$/;
+			if(emr.test(em) == false){
+				all[4].value = null;
+				all[4].placeholder="邮箱不正确";
+				img[4].style.display = 'none';
+				return false;
+			}else{
+				img[4].style.display = 'block';
+			}
+		}
+	</script>
+</body>
+</html>

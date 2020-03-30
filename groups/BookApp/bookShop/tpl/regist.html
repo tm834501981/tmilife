@@ -1,0 +1,49 @@
+<ion-modal-view ng-controller="registController">
+	<ion-header-bar class="bar bar-dark">
+		<h1 class="title">用户注册</h1>
+		<button class="button button-positive" ng-click="closeregist()">关闭</button>
+	</ion-header-bar>
+	<ion-content>
+		<div class="list" style="font:16px/60px '微软雅黑';">
+		  <label class="item item-input item-stacked-label ">
+		    <span class="input-label">
+		    	<i class="icon ion-person"></i>
+		    	用户名(以字母开头 数字字母下划线 6-12位)
+		    </span>
+		    <input type="text" placeholder="username" ng-blur="checkUserName(user.user_name)" ng-model="user.user_name">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">
+		    	<i class="icon ion-locked"></i>
+		    	密码(数字字母下划线 6-12位)
+		    </span>
+		    <input type="password" placeholder="password" ng-blur="checkPassword(user.user_password)" ng-model="user.user_password">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">
+		    	<i class="icon ion-locked"></i>
+		    	重复密码
+		    </span>
+		    <input type="password" placeholder="password" ng-blur="checkRePassword(user)" ng-model="user.repassword">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">
+		    	<i class="icon ion-android-phone-portrait"></i>
+		    	电话号码
+		    </span>
+		    <input type="text" placeholder="tel" ng-blur="checkTel(user.user_tel)"  ng-model="user.user_tel">
+		  </label>
+		  	<ion-list>
+			  <ion-radio ng-model="user.user_sex" ng-value="'m'">
+			  	<i class="icon ion-male"></i>
+			  	男
+			  </ion-radio>
+			  <ion-radio ng-model="user.user_sex" ng-value="'w'">
+			  	<i class="icon ion-female"></i>
+			  	女
+			  </ion-radio>
+			</ion-list>
+		</div>
+		<button class="button button-balanced button-block" ng-click="regist(user)">注册</button>
+	</ion-content>
+</ion-modal-view>

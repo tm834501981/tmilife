@@ -1,0 +1,115 @@
+/*************底部*******************/
+/*************
+底部上部分信息链接
+**************/
+footer{
+	width:100%;
+}
+/**********
+*********
+*底部列表
+**********
+***********/
+.footer{
+	padding:20px 20px 50px 20px;
+}
+.footer ul{
+	margin-top:20px;/*每个列表之间间距加大*/
+}
+.footer ul li{
+	font-family:'HoangYen1155b24030e15dcf';
+	font-size:20px;
+	list-style-image: url('../images/food.png');/*列表的前面小点样式变为图片*/
+	margin-left:30px;
+}
+.footer ul li a{
+	color:#333;
+}
+/*鼠标滑到链接样式变化*/
+.footer ul li a:hover{
+	color:#FF4C4C;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*每个列表第一行的标题样式*/
+.footer ul li:nth-of-type(1){
+	font-family:'Malapropism59fa2452515dcf';
+	font-size:20px;
+	list-style: none;
+	margin-left: 0px;
+}
+/*列表在小于400px时的样式*/
+@media screen and (max-width:400px){
+	.footer ul{
+		width:100%;
+	}
+}
+/*************
+底部下部分信息链接
+**************/
+.ftbot{
+	background: #C5C5C5;
+	text-align: center;
+	padding:20px 20px 50px 20px;
+	font-family:'AdineKirnbergSc5a4148ef015dcf';
+	font-size:25px;
+	font-weight: bold;
+}
+/*下部分版权链接的样式*/
+.ftbot a{
+	font-family:'微软雅黑';
+	font-size:18px;
+	font-weight: bold;
+	color:#000;
+}
+.ftbot a:hover{
+	color:red;/*鼠标滑过变红色*/
+}
+/*底部登录方式*/
+.ftbot>div{
+	margin-top:20px;
+}
+/*第一个f过小单独设置*/
+.footerfont:nth-of-type(1) span{
+	font-size:34px;
+}
+.footerfont span{
+	font:30px 'iconfont';
+	margin-left:10px;
+}
+/*滑过登录的样式*/
+.footerfont:hover{
+	text-decoration: none;
+	opacity: .7;/*透明度减低*/
+}
+.footerfont:hover span{
+	color:#333;
+}
+
+/*************
+底部top
+**************/
+#top{
+	width:50px;
+	height:50px;
+	position:fixed;
+	bottom:0px;
+	right:15px;
+	background:rgba(218,218,218,.9);
+	border-radius:50%;
+	text-align: center;
+	transition:0.5s;
+	visibility:hidden;
+}
+#top a{
+	display: block;
+	font-size:30px;
+	color:white;
+	line-height:40px;
+}
+#top:hover{
+	background:#0099E5;
+}
+#top:hover a{
+	text-decoration:none;
+}

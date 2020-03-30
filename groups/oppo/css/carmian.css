@@ -1,0 +1,285 @@
+.rmain{
+	width:100%;
+	overflow:hidden;
+	background:#EDEDED;
+}
+.rword{
+	font:14px '微软雅黑';
+	color:#7B7B7B;
+	width:90%;
+	margin:30px auto;
+}
+.rword a{
+	font:14px '微软雅黑';
+	color:#7B7B7B;
+	margin-right:10px;
+	margin-left:10px;
+}
+.righttop{
+	position:fixed;
+	right:0px;
+	top:400px;
+}
+/*********
+购物车横条
+*********/
+.long{
+	width:85%;
+	height:70px;
+	margin:0 auto;
+	border:1px solid #E2E2E2;
+}
+.shopcar{
+	width:22%;
+	height:100%;
+	float:left;
+	background:white;
+	font:bold 20px/80px '微软雅黑';
+	padding-left:11.3%;
+	border-bottom:4px solid #E95746;
+}
+.jiao{
+	position:absolute;
+	left:0px;
+	width:30px;
+	height:100%;
+	background:url('../images/car/jian.png')-12px -14px;
+}
+.jiaomenu{
+	position:absolute;
+	left:0px;
+	width:30px;
+	height:100%;
+	background:url('../images/car/jian.png')-62px -14px;
+}
+.shopmenu{
+	width:22%;
+	height:100%;
+	float:left;
+	background:#F7F7F7;
+	color:#CCCCCC;
+	font:bold 20px/80px '微软雅黑';
+	padding-left:11.3%;
+	position:relative;
+	border-bottom:4px solid white;
+}
+/*********
+物品详情
+*********/
+.carinf{
+	width:85%;
+	margin:0 auto;
+	margin-top:20px;
+	border:1px solid #E2E2E2;
+	background:#FBFBFB;
+	margin-bottom:50px;
+}
+.cartop{
+	width:100%;
+	background:white;
+	height:50px;
+	border-bottom:1px solid #E2E2E2;
+}
+.title li{
+	float:left;
+	padding:15px 40px;
+	font:16px '微软雅黑';
+	color:#393939;
+}
+.middle{
+	width:40%;
+	text-align: center;
+}
+.right{
+	width:6%;
+}
+/*********
+**********
+商品购买选择
+********* 
+*********/
+.buytel{
+	padding-top:40px;
+	width:95%;
+	height:200px;
+	margin:0 auto;
+	border-bottom:1px solid #CCCCCC;
+}
+.buypresent{
+	padding-top:40px;
+	width:95%;
+	margin:0 auto;
+	border-bottom:1px solid #CCCCCC;
+}
+#choose{
+	vertical-align: top;
+	width:15px;
+	height:15px;
+	margin-right:10px;
+}
+.chooseinf{
+	font:14px '微软雅黑';
+	color:#393939;
+	margin-left:20px;
+}
+.chooseinf p{
+	font:bold 18px '微软雅黑';
+	color:black;
+	margin-bottom:10px;
+}
+.buyleft input,a{
+	float:left;
+}
+.buyjia{
+	float:left;
+	border:1px solid #D3D3D3;
+	border-radius:5px;
+	width:120px;
+	height:30px;
+	margin-left:220px;
+}
+.buyjia:hover{
+	border:1px solid #47B588;
+}
+.buyjian{
+	width:30px;
+	height:30px;
+	text-align:center;
+	color:#000;
+}
+.buynb{
+	width:60px;
+	height:30px;
+	text-align:center;
+	background:white;
+	color:#000;
+}
+.buymoney{
+	float:left;
+	margin-left:40px;
+}
+.buymoney del{
+	display:block;
+	font:bold 14px '微软雅黑';
+	color:#000;
+	margin-top
+}
+.buymoney span{
+	margin-top:10px;
+	display:block;
+	width:70px;
+	height:30px;
+	background:#E30000;
+	color:white;
+	font:bold 14px/30px '微软雅黑';
+	padding-left:10px;
+	border-radius:5px;
+}
+.delete{
+	float:left;
+	margin-left:80px;
+	color:black;
+
+}
+.carby img{
+	float:left;
+	margin-left:50px;
+}
+.carbyright span{
+	display:inline-block;
+	padding:0px 5px;
+	background:#009B72;
+	font:14px '微软雅黑';
+	color:white;
+	float:left;
+	margin-left:20px;
+}
+.carbyright p{
+	display:inline-block;
+	padding:0px 10px;
+	border:1px solid #009B72;
+	font:14px '微软雅黑';
+	color:#009B72;
+	margin-left:20px;
+	margin-top:20px;
+}
+.carbyright{
+	width:200px;
+	float:left;
+}
+.carbyright a{
+	font:16px '微软雅黑';
+	color:black;
+	margin-left:10px;
+	float:left;
+}
+.carbub{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.chen1{
+	margin-left:300px;
+	float:left;
+	font:16px '微软雅黑';
+}
+/*********
+**********
+底部信息
+********* 
+*********/
+.huabeibot{
+	text-align:right;
+}
+.huabei{
+	margin-top:20px;
+}
+.huabei li{
+	float:right;
+	width:100px;
+	font:16px '微软雅黑';
+	margin-right:70px;
+}
+#huabeimoney{
+	color:#E30000;
+	font:bold 16px '微软雅黑';
+}
+.huabeitwo li{
+	float:right;
+	font:16px '微软雅黑';
+	margin-right:70px;
+	margin-bottom:50px;
+}
+.huabeitwo>li>span{
+	display:inline-block;
+	width: 20px;
+	height:20px;
+	vertical-align: middle;
+	background: url('../images/car/huabei.png') ;
+}
+/*******
+结算
+*******/
+.check{
+	width: 100%;
+	height:160px;
+	background:white;
+
+}
+.contbuy{
+	float:left;
+	font:16px '微软雅黑';
+	color:#2AAD6F;
+	text-decoration: underline;
+	margin:50px 50px;
+}
+.contcheck{
+	float: right;
+	display: inline-block;
+	width:100px;
+	height:50px;
+	font:18px/50px '微软雅黑';
+	color:white;
+	background:#2AAD6F;
+	text-align: center;
+	margin:50px 50px;
+}

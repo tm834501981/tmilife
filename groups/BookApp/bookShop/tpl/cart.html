@@ -1,0 +1,53 @@
+<ion-view view-title="购物车">
+	<ion-content class="has-header" ng-show="iscar">
+		<div class="list">
+			<div class="item item-button-right" ng-repeat="cartBook in cartBooks" style="font:16px '微软雅黑';">	
+				<div style="float:left;">
+					<div style="float:left;">
+						<img ng-src="{{IMAGEURL+cartBook.image[0].image_name}}" alt="" height="80px" style="border-radius:50%;display:block;" >
+					</div>
+					<div style="float:right;margin-left:10px;line-height:25px;">
+						<div>
+							{{cartBook.name}}
+						</div>
+						<div class="assertive">
+							¥{{cartBook.price}}
+						</div>
+						<div>
+							总价:{{cartBook.price*cartBook.num | currency:"":2}}
+						</div>
+					</div>
+					<div style="clear:both;"></div>					
+				</div>
+				<div style="float:right;padding:15px 0px">
+					<button class="button button-small button-outline button-positive" ng-click="jia(cartBook.id)">
+						<i class="icon ion-plus-round"></i>
+					</button>
+					&nbsp;{{cartBook.num}}&nbsp;
+					<button class="button button-small button-outline button-positive" ng-click="jian(cartBook.id)">
+						<i class="icon ion-android-remove"></i>
+					</button>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="item" style="font:20px '微软雅黑';">
+				<STRONG>总价：</STRONG>
+				<span style="float:right">
+					{{total|currency:"RMB:":2}}
+				</span>
+			</div>
+		</div>
+		<div class="padding-horizontal">
+			<button class="button button-large button-balanced" ng-click="pay()">
+				下单
+			</button>
+		</div>
+	</ion-content>
+	<ion-content class="has-header" ng-show="!iscar">
+		<div class="card">
+		  <div class="item item-text-wrap">
+		    您还未登陆，请先登录~
+		  </div>
+		</div>
+	</ion-content>
+</ion-view>

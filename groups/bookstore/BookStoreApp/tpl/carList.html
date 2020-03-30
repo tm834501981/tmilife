@@ -1,0 +1,27 @@
+<h1>购物车</h1>
+<table class="table table-bordered">
+	<tr>
+		<th>名称</th>
+		<th>单价</th>
+		<th>数量</th>
+		<th>小计</th>
+	</tr>
+	<tr ng-repeat="book in carLists">
+		<td>{{book.book_title}}</td>
+		<td>{{book.book_price}}</td>
+		<td>
+			<button class="btn btn-primary" ng-click="subGoods(book.book_id)">-</button>
+			<input type="text" ng-model="book.num">
+			<button class="btn btn-primary" ng-click="addGoods(book.book_id)">+</button>
+		</td>
+		<td>{{book.book_price*book.num|currency:"RMB:":2}}</td>
+	</tr>
+</table>
+<div style="font-size: 20px;">
+	<STRONG>总价：</STRONG>￥ {{total|currency:"RMB:":2}}
+</div>
+<button class="btn btn-info" style="float:right;display:block;margin:30px;" ng-click="orderPut()">提交订单</button>
+<div style="clear:both;"></div>
+<div class="panel panel-footer">
+    <a ng-href="#/bookList">返回BookList页面</a>
+</div>

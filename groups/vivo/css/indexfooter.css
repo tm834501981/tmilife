@@ -1,0 +1,155 @@
+/************底部*****************/
+footer{
+	width:100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:0;
+	height:350px;
+	background:#222222;
+	text-align:center;
+}
+footer>img{
+	margin-top:50px;
+}
+.smallmap{
+	width:600px;
+	margin:30px auto;
+}
+.smallmap .mmap{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	background:#666666;
+	border-radius:50%;
+	transition:background 0.5s;
+	margin-left:30px;
+	float:left;
+}
+
+.smallmap .mmap span{
+	display:inline-block;
+	width:30px;
+	height:50px;
+	
+}
+.wx{
+	position:absolute;
+	top:-125px;
+	left:-25px;
+	display:none;
+}
+.secmap{
+	position:relative;
+
+}
+.secmap{
+	display:block;
+}
+.triangle{
+	border-bottom:10px solid transparent;
+	border-top:10px solid white;
+	border-right:10px solid transparent;
+	border-left:10px solid transparent;
+	position:absolute;
+	top:-25px;
+	left:15px;
+	display:none;
+}
+.firmap:hover{
+	background:#F04545;
+}
+.secmap:hover{
+	background:#20A900;
+}
+.secmap:hover div{
+	display:block;
+}
+
+.thimap:hover{
+	background:#42B0F4;
+}
+.mapsina{
+	background:url('../images/xuebi.png') -428px -80px;
+}
+.mapwx{
+	background:url('../images/xuebi.png') -565px -80px;
+}
+.mapv{
+	background:url('../images/xuebi.png') -294px -78px;
+}
+.mapbaidu{
+	background:url('../images/xuebi.png') -336px -80px;
+}
+.maphome{
+	background:url('../images/xuebi.png') -203px -80px;
+}
+.line{
+	border-left:1px solid #666666;
+	display:inline-block;
+	height:50px;
+	margin-left:30px;
+	float:left;
+}
+#smallv{
+	display:inline-block;
+	width:150px;
+	border-radius:15px;
+	height:35px;
+	font:14px '微软雅黑';
+	color:white;
+	background:#666666;
+	margin-top:10px;
+	float:right;
+	transition:0.5s;
+}
+#smallv span{
+	display:inline-block;
+	width:30px;
+	height:35px;
+	vertical-align:middle;
+	background:url('../images/xuebi.png') -250px -85px;
+}
+#smallv:hover{
+	background:#42B0F4;
+}
+
+.footerbottom a{
+	font:14px '微软雅黑';
+	color:#666666;
+	transition:.5s;
+	margin-left:10px;
+}
+.footerbottom a:hover{
+	color:#008CD6;
+}
+.copyright{
+	margin-top:25px;
+	font:12px '微软雅黑';
+	color:#666666;
+}
+.copyright a{
+	font:12px '微软雅黑';
+	color:#666666;
+}
+.copyright a:hover{
+	color:#008CD6;
+}
+.ttop{
+	visibility:hidden;
+	width:50px;
+	position:fixed;
+	height:50px;
+	bottom:50px;
+	right:10px;
+	z-index:100;
+	font:14px '微软雅黑';
+	color:white;
+	border-radius:10px;
+	background-color:rgba(0,0,0,.2);
+	background-image:url('../images/xuebi.png');
+	background-position:482px 400px;
+}
+.ttop:hover{
+	background-color:rgba(0,140,214,1);
+}

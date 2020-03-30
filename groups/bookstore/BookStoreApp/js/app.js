@@ -1,0 +1,19 @@
+(function(){
+    angular.module("bookStoreApp",[
+        "ngRoute",
+        "ngSanitize",
+        "ngAnimate",
+        "localStorageModule",
+        "appRouterModule",
+        "bookListCtrlModule",
+        "getDataModule",
+        "hostConfigModule",
+        "bookDetailCtrlModule",
+        "userDataModule",
+        "postDataModule",
+        "httpPostModule",
+        "loginCtrlModule",
+        "carDataModule",
+        "carListCtrlModule"
+    ]);
+})();

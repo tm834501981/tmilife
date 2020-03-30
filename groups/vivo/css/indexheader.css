@@ -1,0 +1,244 @@
+/*********vivo头部**************/
+body{
+	position:relative;
+}
+header{
+	width:100%;
+	height:80px;
+	background:rgba(255,255,255,.9);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	border-bottom:1px solid #F2F2F2;
+}
+/********
+	左边图标
+**********/
+.icon{
+	background: url('../images/biaoti.gif') no-repeat;
+	background-size:cover;
+	text-align:center;
+	height:100%;
+	width:25%;
+	float:left;
+}
+.icon a img{
+	margin-top:25px;
+}
+/********
+	中间导航栏
+**********/
+
+.nav{
+	float:left;
+	
+}
+.nav>ul>li{
+	float:left;
+	height:80px;
+	padding:25px 20px;
+	transition:background 0.5s ease;
+}
+.nav>ul>li>a{
+	font:18px '微软雅黑';
+	color:#666666;
+}
+.nav>ul>li:hover{
+	background:#008CD6;
+	cursor:pointer;
+	transition:background 0.5s ease;
+}
+.nav>ul>li:hover a{
+	color:white;
+}
+.index{
+	background:#008CD6;
+}
+.nav>ul>li:first-child>a{
+	color:white;
+}
+/***********
+************
+二级导航栏
+************
+ ***********/
+#smallnav{
+	position:absolute;
+	z-index:100;
+	left:0;
+	top:80px;
+	width:100%;
+	visibility:hidden;
+	height:330px;
+	background:rgba(255,255,255,0);
+}
+#smallnav>ul{
+	float:left;
+}
+#smallnav>ul>li>a{
+	font:15px '微软雅黑';
+	color:rgb(102,102,102);
+}
+#smallnav>ul>li:first-child a{
+	font:18px '微软雅黑';
+	color:#333333;
+}
+#smallnav>ul>li:hover a{
+	color:#008CD6;
+}
+#smallnav>ul{
+	margin:20px 30px 20px 60px;
+}
+#smallnav>ul:first-child{
+	margin-left:18%;
+}
+#smallnav>ul>li{
+	margin-top:20px;
+}
+#secondnav:hover #smallnav{
+	visibility:visible;
+	background:rgba(255,255,255,0.9);
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+}
+#secondnav:hover #smallnav>ul>li:first-child{
+	-webkit-transform:translatex(-50px);
+	-moz-transform:translatex(-50px);
+	-ms-transform:translatex(-50px);
+	-o-transform:translatex(-50px);
+	transform:translatex(-50px);
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+}
+#secondnav:hover #smallnav>ul>li:nth-child(2){
+	-webkit-transform:translatex(-50px);
+	-moz-transform:translatex(-50px);
+	-ms-transform:translatex(-50px);
+	-o-transform:translatex(-50px);
+	transform:translatex(-50px);
+	-webkit-transition:0.65s;
+	-moz-transition:0.65s;
+	-ms-transition:0.65s;
+	-o-transition:0.65s;
+	transition:0.65s;
+}
+#secondnav:hover #smallnav>ul>li:nth-child(3){
+	-webkit-transform:translatex(-50px);
+	-moz-transform:translatex(-50px);
+	-ms-transform:translatex(-50px);
+	-o-transform:translatex(-50px);
+	transform:translatex(-50px);
+	-webkit-transition:0.8s;
+	-moz-transition:0.8s;
+	-ms-transition:0.8s;
+	-o-transition:0.8s;
+	transition:0.8s;
+}
+#secondnav:hover #smallnav>ul>li:nth-child(4){
+	-webkit-transform:translatex(-50px);
+	-moz-transform:translatex(-50px);
+	-ms-transform:translatex(-50px);
+	-o-transform:translatex(-50px);
+	transform:translatex(-50px);
+	-webkit-transition:0.95s;
+	-moz-transition:0.95s;
+	-ms-transition:0.95s;
+	-o-transition:0.95s;
+	transition:0.95s;
+}
+#secondnav:hover #smallnav>ul>li:nth-child(5){
+	-webkit-transform:translatex(-50px);
+	-moz-transform:translatex(-50px);
+	-ms-transform:translatex(-50px);
+	-o-transform:translatex(-50px);
+	transform:translatex(-50px);
+	-webkit-transition:1.10s;
+	-moz-transition:1.10s;
+	-ms-transition:1.10s;
+	-o-transition:1.10s;
+	transition:1.10s;
+}
+#secondnav:hover #smallnav>ul>li:nth-child(6){
+	-webkit-transform:translatex(-50px);
+	-moz-transform:translatex(-50px);
+	-ms-transform:translatex(-50px);
+	-o-transform:translatex(-50px);
+	transform:translatex(-50px);
+	-webkit-transition:1.25s;
+	-moz-transition:1.25s;
+	-ms-transition:1.25s;
+	-o-transition:1.25s;
+	transition:1.25s;
+}
+/*******
+	右边三个小图标
+*******/
+.threeicon{
+	float:right;
+	width:13%;
+	height:100%;
+	margin-right:15px;
+}
+.threeicon>div{
+	float:left;
+}
+.iconone{
+	width:38px;
+	height:38px;
+	border:1px solid #A4A4A4;
+	border-radius:50%;
+	margin:15px 5px;
+	transition:background 0.5s ease;
+	cursor:pointer;
+	z-index:2;
+}
+.iconone div:only-child{
+	margin:8px 5px 5px 7px;
+	width:20px;
+	height:20px;
+	background:url('../images/xuebi.png') -35px 2px;
+}
+.icontwo div:only-child{
+	width:20px;
+	height:25px;
+	background:url('../images/xuebi.png') 3px 4px;
+}
+.iconthree div:only-child{
+	width:20px;
+	height:25px;
+	background:url('../images/xuebi.png') -16px 4px;
+}
+.icononly:hover{
+	background-color:#008CD6;
+	transition:background 0.5s ease;
+	
+}
+.icononly:hover .floatfont{
+	display:block;
+}
+.icononly:hover .icononlychild{
+	background:url('../images/xuebi.png') -35px -18px;
+}
+.icononly{
+	position:relative;
+}
+.floatfont{
+	display:inline-block;
+	position:absolute;
+	border:1px solid #A4A4A4;
+	border-radius:5px;
+	text-align:center;
+	width:100px;
+	top:40px;
+	left:-30px;
+	font:14px '微软雅黑';
+	color:#A4A4A4;
+	display:none;
+} 

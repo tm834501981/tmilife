@@ -1,0 +1,1305 @@
+/**********************banner**************************/
+.banner{
+	width:100%;
+	height:454px;
+	background:#D01A16;
+}
+.banner>div{
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+}
+/**********
+轮播图
+**********/
+.adcont{
+	margin-left:190px;
+	float:left;
+	height:454px;
+	width:800px;
+	overflow: hidden;
+}	
+.adcont img{
+	display:none;
+}
+.adcont img.active{
+	display:block;
+}
+/**********
+**********
+底部的焦点
+**********
+**********/
+.spanlist{
+	position: absolute;
+	bottom:0px;
+	left:40%;
+}
+.spanlist span{
+	display: inline-block;
+	width:15px;
+	height:15px;
+	margin:5px;
+	border-radius:50%;
+	border:3px solid white;
+	cursor:pointer;
+}
+.spanlist span.active{
+	background:#C20053;
+	border:3px solid #C20053;
+} 
+/**********
+**********
+左右按键
+**********
+**********/
+.leftfo,.rightfo,
+.leftbo,.rightbo,
+.spcleft,.spcright{
+	display: block;
+	position: absolute;
+	width:28px;
+	height:62px;
+	background:rgb(0,0,0);
+	opacity:0;
+	filter:alpha(opacity = 0);
+	color:white;
+	font-size:28px;
+	line-height:62px;
+	text-align: center;
+	cursor:pointer;
+	transition:0.5s;
+}
+.leftfo{
+	top:200px;
+	left:220px;
+}
+.rightfo{
+	top:200px;
+	right:220px;
+}
+/**********
+右边的快捷方式
+**********/
+.banner .rightnav{
+	width:200px;
+	height:434px;
+	background:#ECECEC;
+	float:left;
+	margin-top:10px;
+}
+/**********
+**********
+上部分的商城积分
+**********
+**********/
+.banner .rightnav > .three{
+	height:90px;
+	border-bottom:1px dashed #D1D1D1;
+}
+.banner .rightnav > .three a{
+	width:66px;
+	float:left;
+	height:87px;
+	color:#606060;
+	padding:10px 8px;
+	font:12px '微软雅黑';
+}
+.banner .rightnav > .three a:hover{
+	color:#C20053;
+}
+/**********
+**********
+公告
+**********
+**********/
+.banner .rightnav > .new{
+	height:65px;
+	padding:5px;
+}
+.banner .rightnav > .new a{
+	display: block;
+	color:#606060;
+	font:12px '微软雅黑';
+	padding:5px 0px;
+}
+.banner .rightnav >.new a:hover{
+	text-decoration:underline;
+	color:#C20053;	
+}
+/**********
+**********
+话费流量充值
+**********
+**********/
+.banner .rightnav > .money{
+	height:30px;
+}
+.banner .rightnav > .money span{
+	display: block;
+	color:#606060;
+	font:12px '微软雅黑';
+	float:left;
+	width:50%;
+	height:30px;
+	padding:5px;
+	line-height:15px;
+	text-align: center;
+	border-top:1px dashed #D1D1D1;
+	border-bottom:1px dashed #D1D1D1;
+	cursor: pointer;
+}
+.banner .rightnav > .money span.active{
+	border-top:2px solid #C20053;
+	border-bottom:1px solid transparent;
+	border-right:1px solid #D1D1D1;
+}
+.banner .rightnav > .money span.actived{
+	border-top:1px dashed #D1D1D1;
+	border-bottom:1px solid #D1D1D1;
+}
+.banner .rightnav > .money span.activedd{
+	border-top:2px solid #C20053;
+	border-bottom:2px solid transparent;
+	border-left:1px solid #D1D1D1;
+}
+.banner .rightnav > .moneycon{
+	height:135px;
+	display:block;
+}
+.liucon{
+	display:none;
+}
+.moneycon,.liucon{
+	height:135px;
+	position: relative;
+}
+.moneycon input,
+.liucon input,
+.moneycon select,
+.liucon select{
+	border:1px solid #DED3D4;
+	font:12px '微软雅黑';
+	color:#000;
+	background:#f2f2f2;
+	width:180px;
+	height:26px;
+	margin-left:10px;
+	cursor:pointer;
+}
+.moneycon input,
+.liucon input{
+	margin-top:15px;
+	border-bottom:0;
+	text-indent: 5px;
+	cursor:text;
+}
+.moneycon button,
+.liucon button{
+	width:80px;
+	height:28px;
+	background:#C20137;
+	border:0;
+	color:white;
+	font:12px '微软雅黑';
+	margin:5px 15px;
+	cursor:pointer;
+}
+.liucon p,
+.moneycon p{
+	font:12px '微软雅黑';
+	color:#666;
+	margin:5px 15px;
+}
+.liucon span,
+.moneycon span{
+	display: inline-block;
+	font:12px '微软雅黑';
+	color:#C20137;
+}
+.righttel,.righttell{
+	position:absolute;
+	top:40px;
+	left:10px;
+	width:180px;
+	height:25px;
+	background:#FDE7E7;
+	border:1px solid #FDB4B5;
+	color:#C3014F;
+	font:12px/20px '微软雅黑';
+	text-indent: 10px;
+	display: none;
+}
+/********************bottomad********************/
+.bottomad{
+	width:1200px;
+	overflow: hidden;
+	margin:15px auto 0px auto;
+}
+.bottomad img,
+.bottomad div{
+	float:left;
+}
+/**********
+右边的点击轮播图
+**********/
+.bottomad img{
+	margin-right:1px;
+}
+.boimg{
+	position:relative;
+	width:1000px;
+	height:155px;
+	overflow:hidden;
+}
+.boimg img{
+	float:left;
+}
+.boimg>div{
+	width:8000px;
+	position:relative;
+}
+.botl,.botr{
+	width:4000px;
+	position:absolute;
+}
+.botl{
+	left:0px;
+}
+.botr{
+	left:4000px;
+}
+/*左右键*/
+.leftbo{
+	top:50px;
+	left:0px;
+}
+.rightbo{
+	top:50px;
+	right:0px;
+}
+/********************极限冲锋*********************/
+.jixian{
+	width:1210px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.jixian > div{
+	float:left;
+}
+
+
+/*********
+左边图片
+*********/
+.jixian >.leftjx{
+	margin-right:10px;
+	width:310px;
+	position: relative;
+	overflow: hidden;
+}
+.jixian >.leftjx img{
+	display: block;
+	width:310px;
+}
+.guangquan:before{
+	content: ""; 
+	position: absolute; 
+	width:80px; 
+	height:100%; 
+	top: 0; 
+	left:-150px;
+	overflow: hidden;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,0) 100%);
+	-webkit-transform: skewX(-25deg);
+	-moz-transform: skewX(-25deg)
+}
+.guangquan:hover:before{ 
+	left:150%; 
+	transition: left 1s ease 0s; 
+}
+/*********
+右边小图片
+*********/
+.jixian >.rightjx{
+	width:880px;
+}
+.jixian >.rightjx  img{
+	display:block;
+	width:210px;
+	float:left;
+	margin-right:10px;
+}
+.rightjxbot img{
+	margin-top:10px;
+}
+/********************特色频道*********************/
+.leftspec{
+	position: relative;
+	overflow: hidden;
+}
+.spec{
+	width:1210px;
+	margin:0 auto;
+	overflow:hidden;
+}
+h2,.title{
+	font:20px '微软雅黑';
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.spec > div{
+	float:left;
+}
+.spec img{
+	border:1px solid #F4F4F4;
+	display: block;
+	float:left;
+}
+/**********
+轮播图
+**********/
+.spclun{
+	display:block;
+	float: left;
+	width:400px;
+	height:241px;
+	overflow:hidden;
+	position:relative;
+}
+.spclunl img,
+.spclunr img{
+	float:left;
+	border:0;
+	position: relative;
+}
+.spclunl{
+	width:1600px;
+	height:241px;
+	position: absolute;
+	left:0px;
+}
+.spclunr{
+	width:1600px;
+	height:241px;
+	position:absolute;
+	left:1600px;
+}
+/*焦点*/
+.spcspan{
+	position: absolute;
+	z-index:11;
+	bottom:10px;
+	left:40%;
+}
+.spcspan span{
+	display: inline-block;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:#CCCCCC;
+	cursor:pointer;
+}
+.spcspan span.active{
+	background:#C20053;
+}
+/*左右键*/
+.spcleft{
+	bottom:30%;
+	left:0px;
+}
+.spcright{
+	bottom:30%;
+	right:0px;
+}
+.spec > .leftspec{
+	width:191px;
+}
+/**********
+右边图片
+**********/
+.spec >.rightspec{
+	width:1000px;
+}
+.spec >.rightspec > .rightspecbot img{
+	border-top:0;
+	border-left:0;
+}
+.spec > .rightspec > .rightspectop img{
+	border-left:0;
+}
+/*右边第一层*/
+.looktop{
+	display: block;
+	float:left;
+	width:400px;
+}
+/*右边第二层*/
+.look{
+	display:block;
+	float:left;
+	width:200px;
+}
+/*更多栏目*/
+.moreshow{
+	height:190px;
+	width:200px;
+	border:1px solid #F4F4F4;
+	border-top:0;
+	border-left:0;
+	float:left;
+	font:16px '微软雅黑';
+	text-align: center;
+	padding:10px;
+}
+.moreshow ul{
+	margin-top:15px;
+}
+.moreshow ul li {
+	float:left;
+	width:80px;
+	padding:5px;
+}
+.moreshow ul li a{
+	font:12px '微软雅黑';
+	color:#666666;
+}
+.moreshow ul li a:hover{
+	color:#C20053;
+	text-decoration:underline;
+}
+/*下面广告*/
+.add{
+	width:1210px;
+	margin:10px auto;
+	display:block;
+	
+}
+/*********************楼层**********************/
+.onef{
+	width:1210px;
+	margin:0 auto;
+	overflow: hidden;
+}
+/********
+左边标题
+********/
+.oneleft{
+	border-bottom:1px solid #C20035;
+	float: left;
+	width:468px;
+	height:34px;
+}
+.f{
+	font-size:25px;
+	float: left;
+	margin-right: 5px;
+	color:#ccc;
+	position: relative;
+	vertical-align: middle;
+	display:block;
+}
+.fnext{
+	color:white;
+	font:14px '微软雅黑';
+	position: absolute;
+	left:4px;
+	top:2px;
+}
+/*******
+右边选项卡标题
+*******/
+.ftop{
+	float:right;
+	margin-right:20px;
+}
+.ftop ul{
+	overflow: hidden;
+	border-right:1px solid #E9E9E9;
+	border-left:1px solid #E9E9E9;
+}
+.ftop ul li{
+	float:left;
+	width:120px;
+	height:34px;
+	text-align: center;
+	font:12px/34px '微软雅黑';
+	position: relative;
+	cursor:pointer;
+}
+.ftop ul li a{
+	color:#666;
+}
+.ftop .ftopli{
+	display: inline-block;
+	margin-top:10px;
+	width:1px;
+	height:15px;
+	background: #E9E9E9;
+	position: absolute;
+	right:-1px;
+}
+.ftop ul li.active a{
+	color:#C20053;
+	font-weight: bold;
+}
+.ftop ul li.active span{
+	display:none;
+}
+.ftop ul li.active{
+	border:1px solid #C20053;
+	border-bottom:0;
+}
+.ftop ul li.unactive{
+	border-top:1px solid #E9E9E9;
+	border-bottom:1px solid #C20053;
+}
+.ftop ul li.unactive span{
+	display:inline-block;
+}
+/********
+内容显示块
+********/
+.fcontent>div{
+	float:left;
+}
+/********
+*********
+左边的图片大块
+*********
+*********/
+.fconleft{
+	width:190px;
+	height:488px;
+	position: relative; 
+	overflow: hidden;
+}
+.fconad{
+	position: absolute;
+	width:190px;
+	height:62px;
+	top:240px;
+	left:0;
+	background:white;
+	opacity:0.6;
+	filter:alpha(opacity = 60);
+	padding:7px 20px;
+}
+.fcont{
+	position: absolute;
+	width:190px;
+	height:190px;
+	top:302px;
+	left:0;
+	background:white;
+	opacity:0.8;
+	filter:alpha(opacity = 80);
+	padding:7px 20px;
+}
+/*四楼的样式*/
+.fconfour{
+	width:390px;
+	height:490px;
+	position: relative; 
+}
+.fleftforimg{
+	display: block;
+	height:492px;
+	width:390px;
+}
+.fleftimf{
+	display: block;
+	width:190px;
+	height:488px;
+}
+.fconadfour{
+	position: absolute;
+	width:390px;
+	height:62px;
+	top:240px;
+	left:0;
+	background:white;
+	opacity:0.6;
+	filter:alpha(opacity = 60);
+	padding:7px 20px;
+}
+.fcontfour{
+	position: absolute;
+	width:390px;
+	height:190px;
+	top:302px;
+	left:0;
+	background:white;
+	opacity:0.8;
+	filter:alpha(opacity = 80);
+	padding:7px 20px;
+	overflow: hidden;
+}
+.fcontfour>div{
+	width:50%;
+	float:left;
+}
+/********************/
+.fconad a,
+.fconadfour a{
+	display: block;
+	font:12px '微软雅黑';
+	color:#000;
+	margin-top:5px;
+}
+.fconad a:hover,
+.fcont a:hover,
+.fconadfour a:hover,
+.fcontfour a:hover{
+	color:#C20053;
+	text-decoration: underline;
+}
+.fcont a,
+.fcontfour a{
+	display: inline-block;
+	font:12px '微软雅黑';
+	color:#000;
+	margin-right:3px;
+	margin-top:10px;
+}
+.fcont a.active,
+.fcontfour a.active{
+	color:#C20553;
+}
+/*************
+************
+右边选项卡内容
+*************
+**************/
+.fconright ul{
+	position: absolute;
+	width:1020px;
+	height:499px;
+	overflow: hidden;
+}
+.fconright ul{
+	display: none;
+}
+.fconright ul.active{
+	display: block;
+}
+.fconright{
+	width:1020px;
+	height:499px;
+	overflow:hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+/*四楼样式*/
+.fconfourright{
+	width:820px;
+	height:499px;
+	overflow:hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+.fconfourright ul{
+	position: absolute;
+	width:820px;
+	height:499px;
+	overflow: hidden;
+}
+.fconfourright ul{
+	display: none;
+}
+.fconfourright ul.active{
+	display: block;
+}
+/**********/
+/*精品推荐*/
+.smallfcont{
+	display:block;
+	width:200px;
+	height:317px;
+	float: left;
+}
+.bigfcont{
+	display:block;
+	width:400px;
+	height:317px;
+	float: left;
+}
+.jp li,.relax li{
+	float:left;
+}
+.jp li img{
+	border-bottom:1px solid #EDEDED;
+	border-right:1px solid #EDEDED;
+}
+/*其余选项卡*/
+.relax li{
+	width:200px;
+	height:244px;
+	border-bottom:1px solid #EDEDED;
+	border-right:1px solid #EDEDED;
+	padding:15px;
+}
+.relax li a{
+	display:block;
+	font:12px '微软雅黑';
+	color:#666;
+}
+.relax li a:hover{
+	color:#C70034;
+}
+.relax li p{
+	font:bold 16px '微软雅黑';
+	color:#C70034;
+}
+.relax li p span{
+	font-size:12px;
+}
+.relax li p i{
+	font-size:12px;
+	color:#999;
+	margin-left:10px;
+	text-decoration:line-through;
+}
+.gname{
+	margin:5px;
+	height:30px;
+	overflow: hidden;
+}
+.fadimg{
+ 	width:1210px;
+ 	margin:20px auto;
+ 	height:60px;
+ 	background:#FBFBFB;
+}
+.fadimg ul li{
+	float:left;
+	height:30px;
+	margin-top:10px;
+	padding:0px 8px;
+	border-right:1px dashed #ccc;
+}
+.fadimg ul li img{
+	width:100px;
+	height:30px;
+}
+.fadimg ul .lastf{
+	border:0;
+}
+.oneflou{
+	height:170px;
+}
+/*******************天天抢*******************/
+.chearp{
+	width:1210px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.hotorder,.hot{
+	width:300px;
+	float:left;
+}
+/********
+左边标题
+********/
+.chea>h2,
+.chea>img{
+	float:left;
+}
+.chea>img{
+	margin-top:25px;
+	margin-left: 10px;
+}
+.chea{
+	width:890px;
+	float:left;
+}
+/*********
+下方内容
+*********/
+/*左边内容展示*/
+.nai{
+	width:220px;
+	height:278px;
+	padding:25px;
+	border:1px solid #ccc;
+	border-right:0;
+}
+.nei{
+	width:223px;
+	height:139px;
+	border:1px solid #ccc;
+	border-top:0;
+	border-right:0;
+	padding:5px;
+}
+.topnei{
+	border-top:1px solid #ccc;
+}
+.che>ul{
+	width:889px;
+	height:280px;
+	float:left;
+}
+.che>div{
+	float:left;
+	width:300px;
+	border:1px solid #ccc;
+	height:278px;
+}
+.che>div ul{
+	margin-top:-10px;
+}
+.che>ul li{
+	float:left;
+}
+.che a img{
+	transition: 0.5s;
+}
+.che a{
+	display: block;
+	margin-top:10px;
+	font:12px '微软雅黑';
+	color:#333;
+}
+.che a:hover{
+	color:#c20034;
+	text-decoration: underline;
+}
+.che p span{
+	font:12px '微软雅黑';
+	color:#c20035;
+}
+.che p{
+	font:20px '微软雅黑';
+	color:#c20035;
+	margin-top:10px;
+}
+.che>ul a:hover img{
+	margin-left:-5px;
+}
+.nei>div{
+	float:left;
+}
+.neirong{
+	width:90px;
+	float:left;
+}
+.che>ul li div img{
+	width:100px;
+	height:100px;
+	margin:0px 10px;
+}
+.neiimg{
+	width:120px;
+	height:120px;
+}
+/*右边热门晒单*/
+.hotorder{
+	overflow:hidden;
+}
+/******************底部******************/
+footer{
+	margin-top:20px;
+	width:100%;
+	padding-bottom:50px;
+}
+/***********
+正品低价四个块
+***********/
+.serv{
+	margin:0 auto;
+	padding:35px;
+	width:100%;
+	height:133px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.serv ul{
+	width:1263px;
+	margin:0 auto;
+}
+.serv ul li{
+	width:296px;
+	height:57px;
+	float:left;
+	font:20px '微软雅黑';
+	border-right:1px solid #ccc;
+	padding:0px 25px;
+}
+.serv ul li p{
+	font-weight: bold;
+	margin-bottom:10px;
+}
+.serv ul li img,
+.serv ul li p,
+.serv ul li span{
+	float:left;
+}
+.serv ul .servv{
+	border:0;
+}
+.serv ul li img{
+	margin-top:5px;
+	margin-right:10px;
+}
+/***********
+底部导航栏
+***********/
+.foot{
+	width:100%;
+	border-bottom:1px solid #ccc;
+}
+.foot ul{
+	width:1210px;
+	margin:0 auto;
+	height:250px;
+}
+.foot ul li{
+	width:95px;
+	margin-top:50px;
+	margin-right:80px;
+	float:left;
+	font:16px '微软雅黑';
+}
+.foot ul li i{
+	font-size:24px;
+	color:#666;
+	vertical-align: middle;
+}
+.foot ul li span{
+	font-weight: bold;
+	color:#666;
+}
+.foot ul li a{
+	font:12px '微软雅黑';
+	display:block;
+	color:#666;
+	margin-left:30px;
+	margin-top:8px;
+}
+.foot ul .ques a{
+	margin-left:0;
+}
+.foot ul  .fff{
+	width:100px;
+	margin-right:0;
+}
+.foimg img{
+	display: block;
+}
+ /*********
+ 最底部
+ **********/
+.links{
+	width:1000px;
+	margin:50px auto;
+	font:12px '微软雅黑';
+}
+.links li{
+	float:left;
+}
+.links a{
+	font:12px '微软雅黑';
+	color:#666;
+	padding:0px 10px;
+}
+.link{
+	width:1px;
+	height:10px;
+	background:#666;
+	margin-top:3px;
+}
+.links a:hover{
+	text-decoration: underline;
+}
+.coppy{
+	text-align: center;
+	margin:0px auto;
+	width:800px;
+	color:#666;
+}
+.coppy{
+	font:12px '微软雅黑';
+}
+.copy{
+	margin-top:10px;
+}
+.botimg{
+	width:590px;
+	margin:0 auto;
+}
+/****************上方搜索**************/
+.showSearch{
+	width:100%;
+	height:50px;
+	background:rgb(60,60,60);
+	position: fixed;
+	top:0;
+	left:0;
+	opacity:.98;
+	filter:alpha(opacity:98);
+	z-index:1000;
+	display: none;
+}
+.showcon{
+	height:50px;
+	width:1100px;
+	margin:0 auto;
+}
+.showcon a{
+	display: block;
+	float: left;
+	margin-top:5px;
+}
+.showright{
+	margin-left:180px;
+	margin-top:9px;
+}
+.showright .inp{
+	background:white;
+}
+/****************右侧边栏******************/
+.aside{
+	height:100%;
+	position:fixed;
+	z-index:2000;
+	top:0;
+	right:-273px;
+	width:308px;
+	display: none;
+}
+/********
+ 右边图标
+********/
+.rightaside{
+	padding-top:150px;
+	width:35px;
+	height:100%;
+	z-index:1000;
+	background:rgb(60,60,60);
+	float:left;
+	cursor: pointer;
+}
+.rightaside span{
+	display: block;
+	margin-top:3px;
+}
+/*购物车*/
+.asidecar{
+	padding:5px 6px;
+	display: block;
+	text-align: center;
+	color:white;
+	width:35px;
+	height:125px;
+	font:12px '微软雅黑';
+	position: relative;
+	z-index:11;
+}
+.asidecar:hover .asidenum{
+	background:white;
+	color:#C20035;
+}
+.asidenum{
+	margin-top:5px;
+	border-radius: 50%;
+	font:12px '微软雅黑';
+	width:20px;
+	height:20px;
+	background:#C20035;
+}
+.asidefo{
+	font-size:20px;
+}
+/*其他图标*/
+.asideord,.mess{
+	margin-top:20px;
+	display: block;
+	width:35px;
+	height:40px;
+	color:white;
+	text-align: center;
+	padding-top:5px;
+}
+.asideord{
+	position: relative;
+	z-index:11;
+}
+/*意见反馈*/
+.mess{
+	position:absolute;
+	bottom:35px;
+	left:0;
+	background:rgb(60,60,60);
+	z-index:12;
+}
+/*返回顶部*/
+.top{
+	width:35px;
+	height:35px;
+	color:white;
+	text-align: center;
+	display: block;
+	position: relative;
+	padding-top:2px;
+	background:#666666;
+	position:absolute;
+	bottom:0;
+	left:0;
+	cursor:pointer;
+	z-index: 12;
+}
+.ttop{
+	font:12px '微软雅黑';
+	margin-top: 10px;
+}
+.top:before{
+	content:"";
+	display: block;
+	position:absolute;
+	left:10px;
+	border-bottom:5px solid white;
+	border-top:5px solid transparent;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+}
+/*拉出的方框*/
+.moreaside{
+	position:absolute;
+	z-index:10;
+	text-align: center;
+	width:0px;
+	height:40px;
+	right:35px;
+	top:-3px;
+	background:#C20035;
+	font:16px '微软雅黑';
+	border-radius: 20px 0px 0px 20px;
+	line-height: 40px;
+	opacity:0;
+	filter: alpha(opacity = 0);
+}
+.asideord:hover,
+.asidecar:hover,
+.top:hover,
+.mess:hover{
+	background: #C20035;
+}
+/*********
+ 右边购物车拉出
+*********/
+.leftaside{
+	width:270px;
+	height:100%;
+	background:white;
+	float:left;
+}
+.leftblack{
+	width:100%;
+	height:10px;
+	background:rgb(60,60,60);
+}
+.lefttop{
+	width:100%;
+	height:40px;
+	background:#E9E9E9;
+	font:bold 14px/40px '微软雅黑';
+	padding-left:20px;
+}
+.leftcar{
+	width:100%;
+	height:100px;
+	padding-top:20px;
+	text-align: center;
+	font:12px '微软雅黑';
+	color:#999;
+}
+.leftcar i{
+	font-size:60px;
+	vertical-align: middle;
+	color:#CCCCCC;
+}
+.xx{
+	width:20px;
+	height:20px;
+	display: block;
+	font:15px '微软雅黑';
+	float:right;
+	margin:10px 20px;
+	cursor:pointer;
+	transition: 0.5s;
+	text-align: center;
+}
+.lefttop  .xx:hover{
+	-webkit-transform:rotateZ(360deg);
+	-moz-transform:rotateZ(360deg);
+	-ms-transform:rotateZ(360deg);
+	-o-transform:rotateZ(360deg);
+	transform:rotateZ(360deg);
+	-webkit-transform-origin:center center;
+	-moz-transform-origin:center center;
+	-ms-transform-origin:center center;
+	-o-transform-origin:center center;
+	transform-origin:center center;
+}
+/****************左侧边栏**********************/
+.floor{
+	position: fixed;
+	left:-2px;
+	top:30%;
+	border:1px solid #ccc;
+	background:white;	
+	display: none;
+	transition: all 0.2s;
+	animation-name: lou;
+	animation-duration: 1s;
+	animation-fill-mode:backwards;
+	animation-timing-function:ease;
+}
+@keyframes lou{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.floor ul li {
+	position: relative;
+}
+.floor ul li a{
+	display: block;
+	width:30px;
+	height:33px;
+	text-align: center;
+}
+.lounum{
+	font:14px '微软雅黑';
+	line-height:30px;
+	color:#666;
+}
+.loufix{
+	width:30px;
+	height:33px;
+	text-align: center;
+	cursor: pointer;
+	font:12px '微软雅黑';
+	line-height:15px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.floor ul li a.loufix{
+	visibility: hidden;
+}
+.louli{
+	margin-left:5px;
+	width:20px;
+	display: block;
+	border:1px dashed #ccc;
+}

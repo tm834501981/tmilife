@@ -1,0 +1,86 @@
+/***********四个小图标*****************/
+.container{
+	width:100%;
+	height:450px;
+	overflow:hidden;
+	background:#EDEDED;
+	box-sizing:border-box;
+}
+.container>div{
+	width:1200px;
+	height:310px;
+	margin:5% auto;
+	
+}
+.member{
+	width:300px;
+	height:300px;
+	opacity:1;
+	border-bottom:5px solid #2AAD6F;
+	cursor:pointer;
+	float:left;
+
+}
+.membermember{
+	background-image:url('../images/member1.jpg');
+}
+.memberhelp{
+	background-image:url('../images/member2.jpg');
+}
+.membershop{
+	background-image:url('../images/member4.jpg');
+}
+.memberoppo{
+	background-image:url('../images/member3.jpg');
+}
+.member h1{
+	font:bold 20px '微软雅黑';
+	color:white;
+	width:100px;
+	text-align: center;
+	margin:20px auto;
+}
+.radius{
+	margin:50px auto;
+	width:125px;
+	height:125px;
+	background:#2AAD6F;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	border-radius:50%;
+	overflow:hidden;
+}
+.center{
+	margin:43px 43px;
+	width:50px;
+	height:35px;
+}
+.centermember{
+	background:url('../images/map.png') -80px 5px;
+}
+.centerhelp{
+	background:url('../images/map.png') -80px -33px;
+}
+.centershop{
+	background:url('../images/map.png') -80px -75px;
+}
+.centeroppo{
+	background:url('../images/map.png') -80px -120px;
+}
+.member:hover .radius{
+	background:white;
+}
+.member:hover .centermember{
+	background:url('../images/map.png') -80px -155px;
+}
+.member:hover .centerhelp{
+	background:url('../images/map.png') -80px -192px;
+}
+.member:hover .centershop{
+	background:url('../images/map.png') -80px -234px;
+}
+.member:hover .centeroppo{
+	background:url('../images/map.png') -80px -278px;
+}

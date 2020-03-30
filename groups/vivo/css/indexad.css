@@ -1,0 +1,145 @@
+/***************广告部分*******************/
+.ad{
+	z-index:1;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+/*******
+	第一个广告
+*********/
+.adchangeone{
+	display:inline-block;
+	position:relative;
+	background:url('../images/adbg.jpg');
+	background-size:cover;
+	width:100%;
+	height:800px;
+
+}
+/*@keyframes  bigimg{
+	0%{
+		width:0%;
+		right:0%;
+		top:10%;
+		visibility:hidden;
+	}
+	100%{
+		visibility :visible;
+		top:10%;
+		right:-5%;
+		width:70%;
+	}
+}*/
+#adsecond{
+	position:absolute;
+	animation-name:bigimg;
+	animation-duration:2s;
+	animation-fill-mode:forwards;
+	width:0%;
+	right:0%;
+	top:10%;
+}
+/*@keyframes  smallimg{
+	0%{
+		visibility:hidden;
+		right:70%;
+		top:20%;
+		width:0%;
+	}
+	100%{
+		visibility :visible;
+		right:70%;
+		top:40%;
+		width:15%;
+	}
+}*/
+#adsecondone{
+	position:absolute;
+	animation-name:smallimg;
+	animation-duration:2s;
+	animation-delay:1s;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+	right:70%;
+	top:20%;
+	width:15%;
+
+}
+/*@keyframes bottomimg{
+	0%{
+		visibility:hidden;
+		top:45%;
+		right:74%;
+	}
+	100%{
+		visibility:visible;
+		top:55%;
+	}
+}*/
+#adbuttonone{
+	position:absolute;
+	visibility:hidden;
+	top:45%;
+	right:74%;
+	border-radius:30px;
+	width:110px;
+	height:30px;
+	border:1px solid #3899BF;
+	text-indent:10px;
+	font:16px/30px '微软雅黑';
+	color:#3899BF;
+	animation-name:bottomimg;
+	animation-duration:3s;
+	/*animation-delay:1s;*/
+	animation-fill-mode: forwards;
+
+	
+}
+#adbuttonone  span{
+	display:inline-block;
+	vertical-align: middle;
+	transition:1s;
+	width:5px;
+	height:14px;
+	margin-left:0px;
+	background:url('../images/xuebi.png') -588px -137px;
+}
+#adbuttonone:hover span{
+	margin-left:15px;
+	transition:1s;
+}
+/************
+	按钮
+************/
+.adbottom>div{
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	background:#D9D9D9;
+	position:absolute;
+	top:97%;
+	left:45%;
+	margin-left:10px;
+	cursor:pointer;
+	transition:all 0.5s;
+}
+.adbottom div:nth-child(2){
+	left:47%
+}
+.adbottom div:nth-child(3){
+	left:49%
+}
+.adbottom div:nth-child(4){
+	left:51%
+}
+.adbottom div:nth-child(5){
+	left:53%
+}
+.adbottom div:hover{
+	width:14px;
+	height:14px;
+	background: #008CD6;
+}

@@ -1,0 +1,265 @@
+/***********头部*****************/
+
+/*************
+头部的背景
+***************/
+.banner{
+	background:url('../images/bg1.jpg') center center;/*设置背景的位置居中和样式*/
+	background-size:cover;/*设置背景的图片的大小为自动缩放铺满盒子*/
+	padding-bottom:100px;
+}
+
+/*************
+头部logo
+***************/
+
+/*******
+******
+头部logo在小于400px的样式
+*********
+*******/
+@media screen and (max-width:400px){
+	.logo > a > img{
+		width:100px;
+	}
+	.logo{
+		text-align:right;/*logo图片居中*/
+		padding-top:30px;
+	}
+}
+
+/*******
+******
+头部logo在大于400px，小于768px的样式
+*********
+*******/
+@media screen and (min-width:401px) and (max-width:768px){
+	.logo > a > img{
+		width:150px;
+	}
+	.logo{
+		text-align:center;/*logo图片居中*/
+		padding-top:30px;
+	}
+}
+/*******
+******
+头部logo在大于768px的样式
+*********
+*******/
+@media screen and (min-width:769px){
+	.logo{
+		text-align:center;/*logo图片居中*/
+		padding-top:30px;
+		overflow: hidden;/*搜做框的浮动清除*/
+	}
+	.logo>a>img{
+		margin-left:20%;
+	}
+	/*******
+	******
+	*******
+	头部logo搜索框的样式
+	*********
+	*******
+	*******/
+	.search{
+		border:0;
+		background:rgba(0,0,0,0);/*设置搜索框透明*/
+		float:left;/*左浮动*/
+ 		padding-top:15px;
+		margin-left:10px;/*边距设置居中*/
+	}
+	.myfont{
+		font:26px/50px 'iconfont';
+		font-weight: bold;/*搜索字体的样式*/
+		float:left;/*左浮动*/
+		margin-left:10px;
+	}
+	.logo>div{
+		width:250px;
+		height:50px;
+		border:1px solid #000;/*外框盒子的样式*/
+		float:right;
+	}
+}
+
+
+/*************
+头部三个推荐
+***************/
+/*******
+******
+推荐的的样式
+*********
+*******/
+.fdimg{
+	background:white;
+	border-radius:10px;
+	margin-top:50px;
+	padding-top:20px;
+	text-align:center;/*推荐内容居中*/
+	animation-name: playing;/*设置推荐弹出动画*/
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+/*推荐弹出的动画样式*/
+@keyframes playing{
+	0%{ 
+		-webkit-transform:scale(0.3);
+		-moz-transform:scale(0.3);
+		-ms-transform:scale(0.3);
+		-o-transform:scale(0.3);
+		transform:scale(0.3);
+	}
+	35%{
+		-webkit-transform:scale(1.06);
+		-moz-transform:scale(1.06);
+		-ms-transform:scale(1.06);
+		-o-transform:scale(1.06);
+		transform:scale(1.06);
+	}
+	40%{
+		-webkit-transform:scale(0.8);
+		-moz-transform:scale(0.8);
+		-ms-transform:scale(0.8);
+		-o-transform:scale(0.8);
+		transform:scale(0.8);
+	}
+	50%{
+		-webkit-transform:scale(1.05);
+		-moz-transform:scale(1.05);
+		-ms-transform:scale(1.05);
+		-o-transform:scale(1.05);
+		transform:scale(1.05);
+	}
+	60%{
+		-webkit-transform:scale(0.9);
+		-moz-transform:scale(0.9);
+		-ms-transform:scale(0.9);
+		-o-transform:scale(0.9);
+		transform:scale(0.9);
+	}
+	75%{
+		-webkit-transform:scale(1);
+		-moz-transform:scale(1);
+		-ms-transform:scale(1);
+		-o-transform:scale(1);
+		transform:scale(1);
+	}
+}
+.fdimg > a{
+	display: block;/*让a变块级元素*/
+	margin:10px auto;/*图片居中*/
+	width:50px;
+	height:50px;
+	border-radius: 50%;/*图片的大小样式*/
+	overflow:hidden;/*将多余部分隐藏*/
+	border:5px solid #DADADA;/*设置推荐图片的样式*/
+}
+
+.fdimg > h3{
+	font-family:'Malapropism59fa2452515dcf';/*引入外部的字体样式*/
+	margin-top:20px;
+}
+.fdimg > p{
+	font-family:'Malapropism59fa2452515dcf';/*引入外部的字体样式*/
+	margin-top:20px;
+	font-size:15px;
+	padding:10px 10px 20px 10px;
+}
+/*设置推荐在341--768之间的大小样式*/
+@media screen and (min-width:341px) and (max-width:768px){
+	.fdimg > a{
+		width:80%;
+		height:80%;
+		border:10px solid #DADADA;
+	}
+}
+/*设置推荐在768以上的大小样式*/
+@media screen and (min-width:769px){
+	.fdimg > a{
+		width:150px;
+		height:150px;
+		border:10px solid #DADADA;
+	}
+	.fdimg{
+		margin-top:150px;/*块距离logo的距离*/
+	}
+}
+/*******
+******
+*第一个推荐的变化
+*******
+********/
+.intro > div:nth-child(1) > div:hover{
+	background:#0099E5;/*第一个推荐划过的背景变化*/
+}
+.intro > div:nth-child(1) > div:hover a{
+	border:5px solid #0099E5;/*第一个推荐划过的图片的边框变化*/
+	box-shadow: 
+		3px 3px 3px #0087CB,
+		-3px -3px 3px #0087CB,
+		-3px 3px 3px #0087CB,
+		3px -3px 3px #0087CB;/*图片的四周阴影变化*/
+	transition: .5s;/*设置变化的过度*/
+}
+.intro > div:nth-child(1) > div:hover h3,
+.intro > div:nth-child(1) > div:hover p{
+	color:white;
+}
+.intro > div:nth-child(1) > div h3{
+	color:#0099E5;/*变化之前的第一个h3样式*/
+}
+/*******
+******
+*第二个推荐的变化
+*******
+********/
+.intro > div:nth-child(2) > div:hover{
+	background:#A7CB24;/*第一个推荐划过的背景变化*/
+}
+.intro > div:nth-child(2) > div:hover a{
+	border:5px solid #A7CB24;/*第一个推荐划过的图片的边框变化*/
+	box-shadow: 
+		3px 3px 3px #85A21C,
+		-3px -3px 3px #85A21C,
+		-3px 3px 3px #85A21C,
+		3px -3px 3px #85A21C;/*图片的四周阴影变化*/
+	transition: .5s;/*设置变化的过度*/
+}
+.intro > div:nth-child(2) > div:hover h3,
+.intro > div:nth-child(2) > div:hover p{
+	color:white;
+}
+.intro > div:nth-child(2) > div h3{
+	color:#A7CB24;/*变化之前的第二个h3样式*/
+}
+
+/*******
+******
+*第三个推荐的变化
+*******
+********/
+.intro > div:nth-child(3) > div:hover{
+	background:#BFBFBF;/*第一个推荐划过的背景变化*/
+}
+.intro > div:nth-child(3) > div:hover a{
+	border:5px solid #BFBFBF;/*第一个推荐划过的图片的边框变化*/
+	box-shadow: 
+		3px 3px 3px #9E9E9E,
+		-3px -3px 3px #9E9E9E,
+		-3px 3px 3px #9E9E9E,
+		3px -3px 3px #9E9E9E;/*图片的四周阴影变化*/
+	transition: .5s;/*设置变化的过度*/
+}
+.intro > div:nth-child(3) > div:hover h3,
+.intro > div:nth-child(3) > div:hover p{
+	color:white;
+}
+
+.intro>div:nth-child(3) > div h3{
+	color:#BFBFBF;/*变化之前的第三个h3样式*/
+}
+

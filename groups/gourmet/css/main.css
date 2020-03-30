@@ -1,0 +1,406 @@
+/***********主体*****************/
+
+/*******************welcome部分**********************/
+.welcome{
+	background:white;
+	overflow: hidden;
+}
+/*************
+主体的左边文字
+***************/
+.left{
+	padding:0px 25px 20px 25px;	/*左边文字边距*/
+}
+/******
+*******
+文字的样式
+*********
+******/
+
+/*标题*/
+.left > h1{
+	padding-top:20px;
+	font-family:'Two-TurtleDoves59fdb608715dcf';/*引入外部的文字样式*/
+	color:#FF4C4C;
+	font-size:60px;
+	font-weight: bold;/*文字的样式*/
+}
+/*第一段落的样式*/
+.left > p:nth-of-type(1){
+	font-family:'HoangYen1155b24030e15dcf';
+	font-size:18px;
+	color:#000;
+	margin-top:20px;
+}
+/*第二个段落的样式*/
+.left > p:nth-of-type(2){
+	font-family:'HoangYen1155b24030e15dcf';
+	font-size:14px;
+	color:#ccc;
+	margin-top:20px;
+}
+/*readmore的样式*/
+.left > a{
+	display: block;/*变为块级元素*/
+	width:160px;
+	margin:40px auto;
+	padding:0px 10px 0px 10px;/*设置固定宽度和边距*/
+	color:#000;	
+	font-size:20px;
+	font-family:'HoangYen1155b24030e15dcf';
+	border:1px solid #ccc;/*边框的样式*/
+	transition:0.5s;/*a变化的过渡时间*/
+}
+/*readmore里面箭头的样式*/
+.left > a span{
+	transition:0.5s;/*箭头的变化过渡*/
+	font-size: 15px;
+	color:#333;
+}
+/*readmore的变化*/
+.left > a:hover{
+	text-decoration:none;/*下划线取消*/
+	-webkit-transform:rotate(20deg);/*变化的角度*/
+	-moz-transform:rotate(20deg);
+	-ms-transform:rotate(20deg);
+	-o-transform:rotate(20deg);
+	transform:rotate(20deg);
+	border:1px solid #FF4C4C;/*边框的颜色*/
+}
+.left > a:hover span{
+	margin-left:10px;/*箭头向右移动了10px*/
+}
+/*屏幕在401--768和993-1200之间的文字变化*/
+@media screen and (min-width:401px) and (max-width:768px) ,
+(min-width:993px) and (max-width:1200px){
+	.left{
+		padding:0px 40px 20px 40px;/*左边的间距变大*/
+	}
+	.left>p:nth-of-type(1){
+		font-size:24px;/*左边第一段段落文字变大*/
+	}
+	.left>p:nth-of-type(2){
+		font-size:20px;/*左边第二段段落文字变大*/
+	}
+} 
+/*屏幕在769--992和大于1200之间的文字变化*/
+@media screen and (min-width:769px) and (max-width:992px) , 
+(min-width:1201px){
+	.left{
+		padding:0px 60px 20px 60px;/*左边的间距变大*/
+	}
+	.left>h1{
+		font-size: 70px;/*左边的标题变大*/
+	}
+	.left>p:nth-of-type(1){
+		font-size:30px;/*左边第一段段落文字变大*/
+	}
+	.left>p:nth-of-type(2){
+		font-size:24px;/*左边第二段段落文字变大*/
+	}
+	.left>a{
+		width:220px;
+		font-size:30px;/*左边的readmore变大*/
+	}
+	.left>a>span{
+		font-size:25px;/*左边的readmore箭头变大*/
+	}
+}
+/*************
+主体的右边图片
+***************/
+.imgright{
+	padding: 30px 10%;
+}
+.imgright > img{
+	border:10px solid #ccc;
+	border-radius:10px;/*图片的边框样式*/
+	transition: 0.5s
+}
+@media screen and (min-width:993px){
+	.imgright{
+		padding:60px 40px 0px 0px;/*右边的间距变小*/
+	}
+}
+.imgright > img:hover{
+	-webkit-transform:rotate(10deg) scale(.8);
+	-moz-transform:rotate(10deg) scale(.8);
+	-ms-transform:rotate(10deg) scale(.8);
+	-o-transform:rotate(10deg) scale(.8);
+	transform:rotate(10deg) scale(.8);
+}
+
+
+/*******************Latest Events部分**********************/
+.latest{
+	background:#F7F7F7;/*设置背景颜色*/
+	padding-bottom:50px;
+}
+/*************
+最新菜单标题
+***************/
+.latest h1{
+	padding-top:20px;
+	font-family:'Two-TurtleDoves59fdb608715dcf';/*引入外部的文字样式*/
+	font-weight:bold;/*标题加粗*/
+	color:#929292;
+	margin:10px 20px 0px 10px;/*菜单标题间距偏左上*/
+}
+/*************
+最新菜单列表三个菜单
+***************/
+.latest > div{
+		margin-top:30px;/*设置每个菜单的上边距*/
+}
+.latest > div > a > img{
+	border:5px solid #AB9292;
+	border-radius:5px;/*图片的边框*/
+	transition: .5s;/*图片变化的过渡*/
+}
+/*图片下面的日期图片*/
+.word > img{
+	width:40px;
+	margin-top:10px;
+}
+/*文字的标题*/
+.word > p:nth-of-type(1){
+	margin:10px;
+	font-family:'HoangYen1155b24030e15dcf';
+	font-size:18px;
+	font-weight: bold;
+}
+/*文字的段落介绍*/
+.word > p:nth-of-type(2){
+	font-family:'HoangYen1155b24030e15dcf';
+	font-size:16px;
+	margin:10px;
+}
+/*菜单图片滑动的变大特效*/
+.latest > div > a:hover img{
+	-webkit-transform:scale(1.1) ;
+	-moz-transform:scale(1.1) ;
+	-ms-transform:scale(1.1) ;
+	-o-transform:scale(1.1) ;
+	transform:scale(1.1) ;
+}
+/*菜单在401-768之间的变化*/
+@media screen and (min-width:401px) and (max-width:768px){
+	.word>img{
+		display: inline-block;
+		width:60px;/*日期图片变大*/
+	}
+	.word>p:nth-of-type(1){
+		display: inline-block;/*让标题和日期图片一行*/
+		font-size:25px;/*标题字体变大*/
+	}
+	.word>p:nth-of-type(2){
+		font-size: 20px;/*文字字体变大*/
+	}
+}
+/*菜单在769-992之间的变化*/
+@media screen and (min-width:769px) and (max-width:992px){
+	.latest h1{
+		font-size:60px;/*标题变大*/
+	}
+	.word>img{
+		display: inline-block;
+	}
+	.word>p:nth-of-type(1){
+		display: inline-block;/*让标题和日期图片一行*/
+		font-size: 20px;/*标题字体变小*/
+	}
+	.word>p:nth-of-type(2){
+		font-size: 18px;/*文字字体变小*/
+	}
+}
+/*菜单在大于992px的变化*/
+@media screen and (min-width:993px){
+	.latest h1{
+		font-size:70px;/*标题变大*/
+	}
+}
+/*************
+最新菜单右边列表
+***************/
+/*右边列表的标题*/
+.aside h3{
+	font-family:'AdineKirnbergSc5a4148ef015dcf';
+	font-size:40px;
+	font-weight: bold;
+}
+/*右边的列表大小*/
+.aside aside{
+	width:100%;
+	font-family:'HoangYen1155b24030e15dcf';
+}
+/*右边列表的每一行*/
+.aside aside div{
+	width:96%;/*设置宽度*/
+	border:1px solid #929292;
+	padding:0px 10px;/*设置边框和内边距*/
+	font-size:18px;
+	font-weight: bold;
+	color:#929292;/*里面标题的样式*/
+	transition:0.5s;/*文字边框变色的过度*/
+	overflow: hidden;/*清楚文字和加减的浮动*/
+}
+.aside aside div p{
+	float:left;
+	width:90%;/*让文字左浮动*/
+}
+/*设置加减号*/
+.lifont{
+	font:15px 'iconfont';
+	float:right;/*加减号右浮动*/
+	width:10%;
+	margin-top:3px;
+}
+.aside aside div span:nth-of-type(1){
+	display:block;/*加号显示*/
+}
+.aside aside div span:nth-of-type(2){
+	display:none;/*减号隐藏*/
+}
+/*鼠标滑动标题的样式*/
+.aside aside div:hover{
+	color:#000;
+	border:1px solid #000;
+	cursor:pointer;/*鼠标变为小手*/
+}
+.aside aside div:hover span:nth-of-type(2){
+	display:block;/*鼠标滑动加号影藏*/
+}
+.aside aside div:hover span:nth-of-type(1){
+	display:none;/*鼠标滑动减号显示*/
+}
+/*最新菜单右边列表下拉框*/
+aside > ul > li > p{
+	font-size:20px;
+	padding:10px 20px;
+	display:none;/*下拉框隐藏*/
+}
+aside ul li{
+	margin-top:10px;/*每个行间距拉大*/
+}
+/*右边列表在401-992之间的文字大小*/
+@media screen and (min-width:401px) and (max-width:992px){
+	.aside aside div{
+		font-size:25px;
+	}
+	.lifont{
+		font-size:20px;
+	}
+}
+/*******************roll部分**********************/
+/*************
+滾划的背景
+***************/
+.roll{
+	background:url('../images/slide.jpg');
+	height:350px;
+	position: relative;/*设置相对定位为三个原点的上级*/
+	padding:0;
+}
+/*背景上面的黑色透明*/
+.rollbg{
+	padding:50px;/*让内容块居中*/
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.7);
+}
+/*内容的字体样式*/
+.rollfont{
+	font-family:'HoangYen1155b24030e15dcf';
+	font-size:50px;
+	color:white;
+	font-weight: bold;
+	text-align: center;/*内容的字体居中*/
+}
+/*上方字体的内边距为0*/
+.roll div:nth-of-type(1) .active{
+	padding:0;
+}
+/*底部按钮的样式*/
+.roll button{
+	width:15px;
+	height:15px;
+	border-radius: 50%;
+	background:white;
+	border:0;
+	position:absolute;/*绝对定位，相对于roll*/
+	bottom:10px;
+}
+/*三个点的各自位置*/
+.roll button:nth-of-type(1){
+	left:42%;
+}
+.roll button:nth-of-type(2){
+	left:50%;
+}
+.roll button:nth-of-type(3){
+	left:58%;
+}
+/*滾划时点的样式*/
+.roll button:hover,
+.roll button:focus{
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	outline: none;
+}
+/*点到对应图片对应点的样式*/
+.roll div:nth-of-type(2) .active{
+	width:17px;
+	height:17px;
+	border-radius:50%;
+	outline: none;
+	border:2px solid #EC5F30;
+}
+/*滾划的内容在400以下的变化*/
+@media screen and (max-width:400px){
+	.rollfont{
+		font-size:22px;/*文字变小*/
+	}
+	/*三个点的位置变化*/
+	.roll button:nth-of-type(1){
+		left:35%;
+	}
+	.roll button:nth-of-type(2){
+		left:50%;
+	}
+	.roll button:nth-of-type(3){
+		left:65%;
+	}
+}
+/*滾划内容在401-768的样式变化*/
+@media screen and (min-width:401px) and (max-width:768px){
+	.rollfont{
+		font-size:34px;/*文字变大一点*/
+	}
+	/*三个点的位置变化*/
+	.roll button:nth-of-type(1){
+		left:35%;
+	}
+	.roll button:nth-of-type(2){
+		left:50%;
+	}
+	.roll button:nth-of-type(3){
+		left:65%;
+	}
+}
+/*滾划内容在769-992的样式变化*/
+@media screen and (min-width:769px) and (max-width:992px){
+	.rollfont{
+		font-size:36px;/*文字在变大一点*/
+	}
+	/*三个点的位置变化*/
+	.roll button:nth-of-type(1){
+		left:40%;
+	}
+	.roll button:nth-of-type(2){
+		left:50%;
+	}
+	.roll button:nth-of-type(3){
+		left:60%;
+	}
+}

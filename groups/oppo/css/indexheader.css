@@ -1,0 +1,256 @@
+/*************头部最上方导航栏**********************/
+body{
+	width:100%;
+}
+header{
+	width:100%;
+	height:40px;
+	background:rgb(0,155,114);
+	position:relative;
+}
+/*****
+	左侧
+***/
+header ul:first-child{
+	float:left;
+	padding-left:50px;
+}
+header ul li{
+	float:left;
+	height:40px;
+	padding:0px 15px;
+	box-sizing:border-box;
+	border-left:1px solid #47B488;
+	
+}
+header ul li a{
+	font:14px/40px '微软雅黑';
+	color:#fff;
+}
+header ul li:hover{
+	background:#47B488;
+}
+/******
+	右侧
+*******/
+#right{
+	float:right;
+	margin-right:2%;
+}
+#search{
+	border-left:none;
+	z-index:1;
+	
+}
+#search a{
+	display:block;
+	height:30px;
+	width:20px;
+	background-image:url('../images/map.png');
+	background-repeat:no-repeat;
+	background-position:-129px -119px;
+}
+.sconclick{
+	width:100%;
+	height:100px;
+	background:#EDEDED;
+	position:absolute;
+	top:50px;
+	right:0px;
+	z-index:4;
+	display:none;
+	box-shadow: 5px 5px 5px #C2C2C2;
+}
+#textsearch{
+	float:left;
+	margin-left:700px;
+	margin-top:20px;
+	width:400px;
+	height:50px;
+	border:1px solid #CCCCCC;
+	text-indent:20px;
+	font:16px '微软雅黑';
+	color:#B1B1B1;
+}
+#buttonsearch{
+	float:left;
+	margin-top:20px;
+	font:bold 20px '微软雅黑';
+	color:white;
+	background:#2AAD6F;
+	width:120px;
+	height:52px;
+	border:0;
+}
+/**************中部导航栏****************/
+nav{
+	width:100%;
+	height:85px;
+	box-shadow:3px 3px 3px #ccc;
+}
+nav div:first-child{
+	padding:25px 45px;
+	float:left;
+}
+nav>div>ul>li{
+	float:left;
+	padding:20px 10px;
+	margin-left:20px;
+	margin-top:15px;
+
+}
+nav>div>ul>li>a{
+	font:bold 15px '微软雅黑';
+	color:#7B7B7B;
+	padding-bottom:5px;
+}
+nav>div>ul>li:hover>a{
+	color:#000;
+	border-bottom:2px solid #2AAD6F;
+}
+.navright{
+	margin-left:60%;
+}
+.rright{
+	margin-left:50%;
+}
+.rightcar{
+	position:relative;
+	display:inline-block;
+	float:left;
+	border:1px solid #E8E8E8;
+	width:130px;
+	height:45px;
+	margin-top:10px;
+	font:bold 15px/45px '微软雅黑';
+	color:#7B7B7B;
+	padding:10px;
+	text-indent:10px;
+	border-radius:5px;
+	background:url('../images/car.png') no-repeat 90px 10px;
+}
+.rightcar span{
+	display:inline-block;
+	background:#2AAD6F;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	font:16px '微软雅黑';
+	color:white;
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+/******
+	下拉菜单
+*******/
+.firstli{
+	position:relative;
+	z-index:3;
+}
+.secondli{
+	position:absolute;
+	left:-60px;
+	top:70px;
+	display:none;
+	
+}
+.secondli>li{
+	float:none;
+	width:200px;
+	height:50px;
+	background:#2AAD6F;
+	text-align:center;
+	border-bottom:1px solid #3BCF89;
+}
+.secondli>li:hover{
+	background:#3BCF89;
+}
+.secondli>li:hover a{
+	color:white;
+	border:0;
+}
+.secondli>li>a{
+	font:16px/50px '微软雅黑';
+	color:white;
+}
+.secondli>li:before{
+	width:0px;
+	height:0px;
+	border-bottom:20px solid #29AD6E;
+	border-top:20px solid transparent;
+	border-right:20px solid transparent;
+	border-left:20px solid transparent; 
+	position:absolute; 
+	top:-40px;
+	left:80px;
+	content:"";
+}
+.firstli:hover .secondli{
+	display:block;
+}
+/***********广告部分**************/
+.ad a img{
+	width:100%;
+	height:500px;
+	position:relative;
+	left:0px;
+}
+.jianright{
+	border:0;
+	width:70px;
+	height:70px;
+	position:absolute;
+	top:300px;
+	right:50px;
+	background: url('../images/map.png') no-repeat 20px -72px;
+	cursor:pointer;
+}
+.jianleft{
+	border:0;
+	width:70px;
+	height:70px;
+	position:absolute;
+	top:300px;
+	left:50px;
+	background: url('../images/map.png') no-repeat 15px -145px;
+	cursor:pointer;
+}
+.jianbottom{
+	border:1px solid #7B7B7B;
+	width:15px;
+	height:15px;
+	background:#7B7B7B;
+	border-radius:50%;
+}
+.jianbottom:hover{
+	background:white;
+	border:2px solid #2AAD6F;
+	cursor:pointer;
+}
+.jianbottom1{
+	position:absolute;
+	top:580px;
+	left:600px; 
+}
+.jianbottom2{
+	position:absolute;
+	top:580px;
+	left:650px;
+}
+
+.jianbottom3{
+	position:absolute;
+	top:580px;
+	left:700px;
+}
+
+
+/*********下方两个广告*************/
+.telr{
+	margin-left:50px;
+}
+.telr a img{
+	width:45%;
+	margin:100px 20px;
+}

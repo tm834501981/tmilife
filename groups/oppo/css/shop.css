@@ -1,0 +1,135 @@
+/**********主题内容********/
+.shop{
+	background:#F7F7F7;
+	width:100%;
+	overflow: hidden;
+}
+.rword{
+	font:14px '微软雅黑';
+	color:#7B7B7B;
+	width:90%;
+	margin:30px auto;
+}
+.rword a{
+	font:14px '微软雅黑';
+	color:#7B7B7B;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*****
+上方三个产品广告
+*****/
+.admain{
+	width:95%;
+	margin:0 auto;
+}
+.adleft{
+	float:left;
+	width:65%;
+}
+#rtop2{
+	display: inline-block;
+	background:url('../images/shop/top1.jpg') no-repeat;
+}
+#tb2{
+	margin-top:10px;
+	display: inline-block;
+	background:url('../images/shop/tb2.jpg') no-repeat;
+}
+.adright{
+	float:right;
+	width:34%;
+}
+#tr2{
+	display: inline-block;
+	background:url('../images/shop/tr1.png') no-repeat;
+}
+/*********
+oppo产品系列
+********/
+.shopinf{
+	width:95%;
+	margin:0 auto;
+}
+.shopheader span{
+	display:inline-block;
+	width:40%;
+	height:10px;
+	border-top:1px solid #E5E5E5;
+}
+.shs{
+	margin-right:2%;
+}
+.shsp{
+	margin-left:2%;
+}
+.shopheader{
+	font:25px '微软雅黑';
+}
+.siword>span{
+	font:20px '微软雅黑';
+	float:left;
+}
+.siword a{
+	float:right;
+	font:20px '微软雅黑';
+	color:black;
+	margin-right:20px;
+}
+#gt{
+	margin-left:10px;
+	display:inline-block;
+	width:25px;
+	height:25px;
+	border-radius:50%;
+	background:#B4B4B4;
+	color:white;
+	font:20px/25px '微软雅黑';
+	text-indent: 4px;
+
+}
+.siwtwo{
+	color:#787878;
+	margin-left:20px;
+}
+.fsleft{
+	margin-top:20px;
+	display:inline-block;
+	width:24%;
+	height:350px;
+	background:white;
+	text-align:center;
+	margin-right:1%;
+}
+.fsleft>a>p{
+	font:15px '微软雅黑';
+	color:#A0A0A0;
+}
+.fsleft:hover{
+	box-shadow: 5px 5px 5px  #ccc;
+}
+.fsleft img{
+	margin:40px 40px;
+}
+.black{
+	color:black;
+	font:17px '微软雅黑';
+}
+.fsleft{
+	float:left;
+}
+.margintop{
+	margin-top:20px;
+}
+/**********
+OPPO 产品特色 
+**********/
+.mtop{
+	margin-top:50px;
+}
+.imgmt{
+	margin-top:20px;
+}
+.mb{
+	margin-bottom:100px;
+}

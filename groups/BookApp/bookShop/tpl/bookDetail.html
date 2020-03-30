@@ -1,0 +1,32 @@
+<ion-view view-title="商品详情">
+	<ion-content>
+		<div class="list card">
+			<div class="item item-avatar">
+			    <img ng-src="{{IMAGEURL+book.images[0].image_name}}">
+			    <h2>{{book.title}}</h2>
+			    <p>¥{{book.price}}</p>
+			    <div class="item-button-right">
+			    	<button class="button button-positive button-large icon-left ion-ios-cart-outline" ng-click="addCar(book)">添加购物车</button>
+			    </div>
+			</div>
+			<div class="item item-body" style="font-family:'微软雅黑';">
+			    <img class="full-image" ng-src="{{IMAGEURL+book.images[0].image_name}}">
+			    <p>作者:{{book.author}}</p>
+			    <p>时间:{{book.pudate*1000 | date:"yyyy-MM-dd HH:mm:ss"}}</p>
+			    <p ng-bind-html="book.desc"></p>	  	
+			</div>
+			<p class="item">
+			      <a class="ion-heart"  style="font:16px '微软雅黑';color:red;"></a>
+			      <a class="subdued ">1 Like</a>
+			      <br>
+			      <a class="ion-chatbubble" style="font:16px '微软雅黑';color:blue;"></a>
+			      <a class="subdued">5 Comments</a>
+			</p>
+			<div ng-repeat="relateBook in book.relation">
+				<a ng-href="#/tab/bookDetail/{{relateBook.relate_bookid}}">
+					<img ng-src="{{IMAGEURL+relateBook.images[0].image_name}}" alt="" style="border-radius:50%;width:30%;float:left;margin:1%;">
+				</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

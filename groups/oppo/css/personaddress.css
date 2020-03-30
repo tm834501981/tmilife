@@ -1,0 +1,156 @@
+.righttop{
+	position:fixed;
+	right:0px;
+	top:400px;
+}
+.rmain{
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+	margin-top:10px;
+}
+.rword{
+	font:14px '微软雅黑';
+	color:#7B7B7B;
+	width:90%;
+	margin:30px auto;
+}
+.rword a{
+	font:14px '微软雅黑';
+	color:#7B7B7B;
+	margin-right:10px;
+	margin-left:10px;
+}
+ /********
+ 菜单
+ *********/
+.nav{
+	width:100%;
+	height:85px;
+}
+.nav>ul>li{
+	float:left;
+	padding:20px 10px;
+	margin-left:20px;
+	margin-top:15px;
+
+}
+.nav>ul>li>a{
+	font:bold 15px '微软雅黑';
+	color:#7B7B7B;
+	padding-bottom:5px;
+}
+.nav>ul>li:hover>a{
+	color:#000;
+	border-bottom:2px solid #2AAD6F;
+}
+.personindex{
+	float:left;
+	margin:40px 0px 0px 80px;
+	font:bold 25px '微软雅黑';
+}
+.ppindex{
+	border-bottom:2px solid #2AAD6F;
+}
+ /********
+ 内容
+ *********/
+ .container{
+	width:90%;
+	margin:0 auto;
+	background:#FBFBFB;
+	border-top:1px solid #ccc;
+ }
+ /****
+ ****
+ 地址
+ *****
+ *****/
+ .addspan{
+ 	font:bold 16px '微软雅黑';
+ 	margin-bottom:20px;
+ }
+ .orderadd{
+	display: inline-block;
+	width:98%;
+	padding-left:20px;
+	padding-top:50px;
+	border-bottom:1px solid #E2E2E2;
+}
+.orderbill{
+	display: inline-block;
+	width:98%;
+	padding-left:20px;
+	padding-top:30px;
+	border-bottom:1px solid #E2E2E2;
+}
+.orderadd a{
+	font:bold 16px/60px '微软雅黑';
+	color:#1F8657;
+	display: inline-block;
+	width:150px;
+	height:60px;
+	background:#D4EEE1;
+	text-align: center;
+}
+.orderadd a:hover{
+	color:white;
+	background:#1F8657;
+}
+.address{
+	font:18px '微软雅黑';
+}
+.address>input{
+	width:300px;
+	height:60px;
+	border-radius:10px;
+	border:1px solid #CCCCCC;
+	font:18px '微软雅黑';
+	text-indent:10px;
+	background:white;
+	margin:20px 0px;
+}
+.address>input:hover{
+	border:1px solid #2AAD6F;
+}
+.fir{
+	margin-top:20px;
+}
+.address select{
+	width:200px;
+	height:60px;
+	border-radius:10px;
+	border:1px solid #CCCCCC;
+	font:18px '微软雅黑';
+	text-indent:10px;
+	background:#FDFDFD;
+	margin:20px 10px 10px 0px; 
+}
+.addressinf>input{
+	width:500px;
+	height:60px;
+	border-radius:10px;
+	border:1px solid #CCCCCC;
+	font:18px '微软雅黑';
+	text-indent:10px;
+	background:#FDFDFD;
+	margin:20px 0px;
+	margin-top:5px;
+}
+#inputtype{
+	font:bold 16px/60px '微软雅黑';
+	color:#1F8657;
+	display: inline-block;
+	width:100px;
+	height:60px;
+	background:#D4EEE1;
+	text-align: center;
+	border-radius:0px;
+	border:0;
+	cursor: pointer;
+	margin:20px 20px 30px 0px;
+}
+#inputtype:hover{
+	color:white;
+	background:#1F8657;
+}

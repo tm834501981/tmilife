@@ -1,0 +1,41 @@
+.shopimage{
+	width:85%;
+	margin:0 auto;
+}
+.shopimage a{
+	float:left;
+	display:inline-block;
+	padding:10px 40px; 
+	font:18px '微软雅黑';
+	color:black;
+}
+#shopinf{
+	background:#409F73;
+	font:18px '微软雅黑';
+	color:white;
+}
+.rimg{
+	width:100%;
+	overflow: hidden;
+	margin:0 auto;
+}
+.rimgone{
+	width:100%;
+	overflow: hidden;
+	margin:100px auto;
+}
+.rimgtwo{
+	width:100%;	overflow: hidden;
+	margin:0px auto;
+}
+
+.rimgfive{
+	width:100%;
+	overflow: hidden;
+	margin:0px auto;
+}
+.rimgfour{
+	width:100%;
+	overflow: hidden;
+	margin:0px auto;
+}

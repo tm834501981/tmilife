@@ -1,0 +1,24 @@
+.bookList{
+	display:block;
+	text-decoration:none;
+}	
+.List{
+	box-shadow:0px 0px 5px #ccc;
+}
+.registfont{
+	font:14px '微软雅黑';
+	float:right;
+	color:#000;
+	cursor:pointer;
+	margin:1%;
+}
+.registfont:hover{
+	color:purple;
+}
+.lunbo{
+	height:300px;
+}
+.lunbo img{
+	width:100%;
+	min-height:300px;
+}

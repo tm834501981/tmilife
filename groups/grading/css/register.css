@@ -1,0 +1,76 @@
+	
+		table tr td:nth-child(3){
+			width:20px;
+		}
+		.button{
+			display: inline-block;
+			background-image: linear-gradient(lightblue,blue);
+			border:0;
+			border-radius: 5px;
+			width:70px;
+			height:30px;
+			font:bold 15px/30px '微软雅黑';
+			color:white;
+			cursor:pointer;
+			margin: 10px;
+		}
+		a{
+			text-decoration: none;
+		}
+		img{
+			display: none;
+		}
+@media screen and (max-width:768px){
+	table{
+		width:100%;
+		text-align: center;
+		margin:100px auto;
+		border:1px solid #ccc;
+		padding:0px;
+		background-image: linear-gradient(#f2f2f2,#ccc);
+	}
+	table tr td{
+		padding-top:20px;
+	}
+	table tr td:nth-child(4){
+		display:none;
+	}
+	input{
+		width:80%;
+		height:30px;
+		background:#f2f2f2;
+		border:1px solid #ccc;
+		border-radius: 5px;
+		font:16px '微软雅黑';
+	}
+	table tr td:first-child{
+		font:14px '微软雅黑';
+	}
+			
+}
+@media screen and (min-width:769px){
+	table{
+		text-align: center;
+		margin:100px auto;
+		border:1px solid #ccc;
+		padding:30px;
+		background-image: linear-gradient(#f2f2f2,#ccc);
+	}
+	input{
+		width:300px;
+		height:30px;
+		background:#f2f2f2;
+		border:1px solid #ccc;
+		border-radius: 5px;
+		font:16px '微软雅黑';
+	}
+	table tr td:first-child{
+		width:100px;
+		height:50px;
+		font:20px '微软雅黑';
+	}
+	table tr td:nth-child(4){
+		font:bold 16px/30px '微软雅黑';
+		text-align: left;
+	}		
+}

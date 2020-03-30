@@ -1,0 +1,37 @@
+<ion-modal-view ng-controller="orderController">
+	<ion-header-bar class="bar bar-dark">
+		<h1 class="title">订单详情</h1>
+		<button class="button button-positive" ng-click="closeOrder()">关闭</button>
+	</ion-header-bar>
+	<ion-content>
+		<!-- <button class="button button-assertive" ng-click="showDeleteButtons()">删除</button> -->
+		<ion-list
+		show-delete="true">
+			<ion-item ng-repeat="order in orders track by $index">
+				<ion-delete-button class="ion-minus-circled" ng-click="delete(order[0].order_id)"></ion-delete-button>
+				<span class="icon">
+					<i class="ion-document-text" style="font:22px '微软雅黑';"></i>
+					<span style="font:18px '微软雅黑';margin-left:5px;">订单{{$index+1}}</span>
+					<div style="float:right;margin-top:5px;"></div>	
+				</span>
+				
+				
+				<div class="list card">
+				    <span class="item" ng-repeat="orderdetail in order" style="font:16px '微软雅黑';">
+				    	<div style="float:left;">
+				    		<p>书名:{{orderdetail.book_data[0].book_title}}</p>
+				    		<p>单价:¥{{orderdetail.book_data[0].book_price}}</p>
+				    		<p>数量:{{orderdetail.book_num}}</p>
+				    		<p>总价:¥{{orderdetail.book_data[0].book_price*orderdetail.book_num}}</p>	
+				    	</div>		    	       					
+				    </span>
+				    <span style="display:inline-block;float:right;font:16px/30px '微软雅黑';margin-right:40px;">
+				    	订单总价:¥{{order.total}}
+				    </span>
+				</div>
+				 
+			</ion-item>
+		</ion-list>
+		
+	</ion-content>
+</ion-modal-view>

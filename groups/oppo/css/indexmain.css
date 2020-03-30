@@ -1,0 +1,200 @@
+/***********中部信息栏**************/
+main{
+	width:100%;
+}
+/*******
+	左边第一个
+*******/
+main>div{
+	width:1200px;
+	margin:0 auto;
+}
+main>div>div{
+	margin-top:100px;
+	float:left;
+	margin-left:3%;
+}
+main>>div>div:first-child{
+	margin-left:5%;
+}
+main div div div:first-child{
+	font:bold 20px '微软雅黑';
+	color:#1F8657;
+}
+main>div>div>div>a:first-child{
+	font:bold 17px '微软雅黑';
+	display:inline-block;
+	margin-top:10px;
+	color:#000;
+}
+main>div>div>a>img{
+	margin-top:25px;
+} 
+/*******
+	中间第二个
+*******/
+.first{
+	margin-top:25px;
+}
+.news{
+	width:380px;
+	overflow:hidden;
+}
+.news a img{
+	width:70px;
+	height:70px;
+}
+.news a{
+	float:left;
+}
+.news div{
+	float:left;
+	height:80px;
+	width:280px;
+	margin-left:10px;
+	border-bottom:1px solid #CCCCCC;
+}
+.news a span{
+	font:16px '微软雅黑';
+	color:#1F8657;
+	
+}
+/******
+	右边第三个
+********/
+.others{
+	width:350px;
+	border:1px solid #D2D2D2;
+	border-top:0;
+}
+.others .color{
+	width:100%;
+	height:2px;
+	background-image:linear-gradient(to right,#EB1A2D,#FDB740);
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorStr=#EB1A2D,endColorStr=#FDB740);
+}
+/*******
+**********
+	右侧上部
+**********
+**********/
+.wba{
+	height:30px; 
+	border-bottom:1px solid #D2D2D2;
+}
+.sian{
+	height:30px;
+}
+.sina a img{
+	margin-left:10px;
+	margin-top:5px;
+}
+.sina a{
+	font:14px/30px '微软雅黑';
+	color:#0078B6;
+}
+.sina a:hover{
+	text-decoration:underline;
+}
+/*******
+**********
+	右侧中部
+**********
+**********/
+.user{
+	height:50px;
+	overflow:hidden;
+	padding-top:15px;
+	padding-left:15px;
+	padding-bottom:15px;
+	border-bottom:1px solid #D2D2D2;
+}
+.user img{
+	float:left;
+}
+.user div{
+	float:left;
+	margin-left:10px;
+}
+.user div span a{
+	font:14px'微软雅黑';
+	color:#0078B6;
+	height:20px;
+	display:inline-block;
+}
+.user div span a:hover{
+	text-decoration:underline;
+}
+.jia{
+	width:200px;
+}
+.user .v{
+	width:155px;
+	display:inline-block;
+	font:12px '新宋体';
+	color:#999999;
+	height:20px;
+	text-indent:20px;
+	background:url('../images/v.png') no-repeat 0px -60px;
+}
+.user button{
+	background:#F8404E;
+	border:1px solid #E11A2E;
+	font:bold 12px '微软雅黑';
+	color:white;
+	width:65px;
+	height:25px;
+	border-radius:2px;
+	cursor:pointer;
+}
+/*******
+**********
+	右侧底部
+**********
+**********/
+.Olympic{
+	width:100%;
+	height:220px;
+	overflow:auto;
+}
+.Olympic>div{
+	width:88%;
+	margin-left:15px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+	border-bottom:1px dashed #D2D2D2;
+}
+.Olympic>div:hover{
+	background:#F9F9F9;
+}
+.Olympic>div>p{
+	font:12px '新宋体';
+	color:#000;
+	line-height:20px;
+}
+.Olympic>div>img{
+	margin-top:5px;
+	padding:5px;
+	border:1px solid #999999;
+}
+.Olympic>div>div>a{
+	font:12px '微软雅黑';
+	color:#AEBCD2;
+}
+.Olympic>div>div>a:hover{
+	text-decoration:underline;
+}
+.Olympic>div>div>span{
+	font:12px '微软雅黑';
+	color:#AEBCD2;
+}
+.time a:first-child,span{
+	float:left;
+}
+.bottom{
+	float:right;
+}
+.last{
+	float:right;
+}

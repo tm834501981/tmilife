@@ -1,0 +1,97 @@
+/*********导航栏**********/
+/*************
+小于400px时导航栏的变化
+*************/
+@media screen and (max-width:400px){
+	nav > div > span{
+		width:25px;
+		height:4px;
+	}
+}
+/*************
+大于400px时导航栏的变化
+*************/
+@media screen and (min-width:401px){
+	nav>div>span{
+		width:35px;
+		height:5px;
+	}
+}
+/*************
+导航栏的样式
+*************/
+nav > div > span{
+	display: block;
+	margin-top:5px;
+	background:#000;
+}
+nav > div{
+		position:fixed;/*固定导航栏在左上角*/
+		top:30px;
+		left:30px;
+		transition: 0.5s;
+		z-index:100;/*设置它的在层级在最上方*/
+		cursor: pointer;
+}
+/*************
+导航栏左侧拉出的样式
+*************/
+.leftnav{
+	position:fixed;
+	left:-250px;
+	top:0;/*固定在左侧*/
+	background:white;
+	z-index:99;
+	height:100%;
+	width:250px;
+	transition:0.5s;/*出来的样式过渡*/	
+}
+/*左侧栏在小于400时的宽度*/
+@media screen and (max-width:400px){
+	.leftnav{
+		width:60%;
+	}
+}
+/*左侧栏的字体*/
+.leftnav{
+	font-family:'HoangYen1155b24030e15dcf';
+	font-size:25px;
+	color:#000;
+}
+.leftnav ul li{
+	text-align: center;
+	padding:20px;
+	border-bottom:1px dashed #ccc;	
+}
+.leftnav ul li a{
+	color:#000;
+}
+/*左侧栏第一行的样式*/
+.leftnav ul li:first-child{
+	background:#FF4C4C;
+	padding:25px;
+} 
+.leftnav ul li:first-child a{
+	font-size:30px;
+	color:white;
+}
+/*鼠标划上的样式*/
+.leftnav ul li a:hover{
+	text-decoration: none;
+	color:#FF4C4C;
+	font-weight:bold;
+}
+.leftnav ul li:first-child a{
+	color:white;
+}
+a:focus{
+	text-decoration:none;
+}
+/*设置左侧栏出来时的样式*/
+#nav{
+	transition: 0.5s;/*右边内容的过渡*/
+	width:100%;
+}
+body{
+	overflow-x:hidden;/*将多余的部分隐藏*/
+}

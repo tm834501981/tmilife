@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<script src="./js/on.js"></script>
+	 <!--[if lt IE 9]>
+      <script src="./bootstrap/js/html5shiv.min.js"></script>
+      <script src="./bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<a name="top"></a>
+	<!-- 头部 -->
+	<header class="container-fluid top">
+		<div class="row">
+			<nav class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-sm-push-1">
+				<a href="index.html" class="iconfont iconfontsize">&#xe622;</a>
+				<!-- 小于768 -->
+				<div class="visible-xs xsnav">
+					<div>
+						<a href="#" class="glyphicon glyphicon-align-justify threeline" onclick="getshow()"></a>
+						<div class="chat">
+							<a href="login.html" class="iconfont">&#xe604;</a>
+							<a href="#l" class="iconfont">&#xe62b;</a>
+						</div>
+					</div>
+				</div>
+				<ul class="xsul"  id="show">
+					<li><a href="#">GALLERY</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">TYPO</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+				<div class="cha" id="x" onclick="gethidden()">
+					<p class="glyphicon glyphicon-remove"></p>
+				</div>
+				<!-- 大于768px -->
+				<div class="hidden-xs lgnav">
+					<ul class="nav">
+						<li>
+							<a href="#">
+								ABOUT
+							</a>
+						</li>
+						<li><a href="#">GALLERY</a></li>
+						<li><a href="#">NEWS</a></li>
+						<li><a href="#">TYPO</a></li>
+						<li><a href="#">CONTACT</a></li>
+						<div style="clear:both;"></div>
+					</ul>
+					<div class="chatlink">
+						<a href="login.html" class="iconfont">&#xe604;</a>
+						<a href="#l" class="iconfont">&#xe62b;</a>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+			</nav>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 word">
+				<span>Gardening</span>
+			</div>
+			<div class="bottom col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div>
+					<span class="glyphicon glyphicon-leaf"></span>
+					<p>CLARITAS EST ETIAM</p>
+				</div>
+				<div>
+					<span class="glyphicon glyphicon-certificate"></span>
+					<p>CLARITAS EST ETIAM</p>
+				</div>
+				<div>
+					<span class="glyphicon glyphicon-tree-deciduous"></span>
+					<p>CLARITAS EST ETIAM</p>
+				</div>
+				<div>
+					<span class="glyphicon glyphicon-screenshot"></span>
+					<p>CLARITAS EST ETIAM</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- 内容 -->
+		<!-- 四个块 -->
+		<div class="cont">
+			<div>
+				<h4>MIRUM EST NOTARE</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<span></span>
+			</div>
+			<div>
+				<h4>MIRUM EST NOTARE</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<span></span>
+			</div>
+			<div>
+				<h4>MIRUM EST NOTARE</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<span></span>
+			</div>
+			<div>
+				<h4>MIRUM EST NOTARE</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<span></span>
+			</div>
+		</div>
+		<!-- 两图加文字 -->
+		<div class="imwo container-fluid">
+			<div class="row">
+				<div class="imgg col-xs-8 col-xs-push-2 col-sm-3 col-sm-push-0 col-md-10 col-md-push-1 col-lg-3 col-lg-push-0">
+					<img src="./images/s1.jpg" width="100%">
+				</div>
+				<div class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-0  col-md-10 col-md-push-1 col-lg-6 col-lg-push-0">
+					<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+					</p>
+					<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+					</p>
+				</div>
+				<div class="imgg col-xs-8 col-xs-push-2 col-sm-3 col-sm-push-0  col-md-10 col-md-push-1 col-lg-3 col-lg-push-0">
+					<img src="./images/s2.jpg" width="100%">
+				</div>
+			</div>
+		</div>
+		<!-- 三图 -->
+		<div  class="three container-fluid">
+			<div class="row th">
+				<div class="col-xs-5 col-sm-3 col-md-10 col-lg-3">
+					<img src="./images/i1.jpg" width="100%">
+					<div>
+						DUIS AUTEM VEL EUM
+					</div>
+				</div>
+				<div class="col-xs-5 col-sm-3 col-md-10 col-lg-3">
+					<img src="./images/i2.jpg" width="100%">
+					<div>
+						DUIS AUTEM VEL EUM
+					</div>
+				</div>
+				<div class="col-xs-10 col-sm-4 col-md-10 col-xs-push-1 col-sm-push-0 col-lg-4">
+					<h5>CLARITAS EST ETIAM PROCESSUS DYNAMICUS</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 名句 -->
+		<div  class="container-fluid">
+			<div class="row famous">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2>Testimonials</h2>
+					<p>
+						Cras porttitor imperdiet volutpat nulla malesuada lectus eros ut convallis felis consectetur ut
+					</p>
+					<p>
+						" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum iaculis diam quis sodales. Vestibulum eu dui tellus. In viverra porttitor auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas "
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- News -->
+		<div  class="container-fluid">
+			<div class="row news">
+				<div class="col-xs-12 col-sm-11 col-md-11 col-lg-11">
+					<h1>News</h1>
+					<p>
+						Cras porttitor imperdiet volutpat nulla malesuada lectus eros
+					</p>
+					<p>
+						ut convallis felis consectetur ut
+					</p>
+				</div>
+				<div  class="col-xs-11 new col-sm-5 col-md-11">
+					<a href="#">Integer vitae ligula sed lectus</a>
+					<p>8.00 - 10.00 | JUN 09,2014</p>
+					<a href="#"><img src="./images/img1.jpg" width="100%"></a>
+					<p>
+						Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.
+					</p>
+					<a href="#"><img src="./images/read.png"></a>				
+				</div>
+				<div  class="col-xs-11 new col-sm-5 col-md-11">
+					<a href="#">Integer vitae ligula sed lectus</a>
+					<p>8.00 - 10.00 | JUN 09,2014</p>
+					<a href="#"><img src="./images/img2.jpg" width="100%"></a>
+					<p>
+						Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.
+					</p>
+					<a href="#"><img src="./images/read.png"></a>			
+				</div>
+				<div  class="col-xs-11 new col-sm-5 col-md-11">
+					<a href="#">Integer vitae ligula sed lectus</a>
+					<p>10.00 - 12.00 | SEP 24,2014</p>
+					<a href="#"><img src="./images/img3.jpg" width="100%"></a>
+					<p>
+						Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.
+					</p>
+					<a href="#"><img src="./images/read.png"></a>			
+				</div>
+				<div  class="col-xs-11 new col-sm-5 col-md-11">
+					<a href="#">Integer vitae ligula sed lectus</a>
+					<p>11.00 - 10.00 | JUN 10,2014</p>
+					<a href="#"><img src="./images/img4.jpg" width="100%"></a>
+					<p>
+						Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.
+					</p>
+					<a href="#"><img src="./images/read.png"></a>				
+				</div>
+			</div>
+		</div>
+	<!-- 底部 -->
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h2>Get In Touch</h2>
+				<p>
+					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspeisse eget diam
+				</p>
+				<div class="foot">
+					<a href="#l" class="iconfont">&#xf000f;</a>
+					<a href="#l" class="iconfont">&#xe736;</a>
+					<a href="#l" class="iconfont">&#xe65a;</a>
+				</div>
+			</div>
+			<div class="footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h2>Address</h2>
+				<p>10-765 mg-Road,</p>
+				<p>Washington, DC, United States,</p>
+				<p>ud-19832-6578.</p>
+				<p>Phone :+1 900 876 1234</p>
+				<p>E-mail : example@mail.com</p> 
+			</div>
+			<div class="footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h2>Some link</h2>
+				<p><a href="#">THX</a></p>
+				<p><a href="#">Alibaba国际站UED</a></p>
+				<p><a href="#">天猫UED</a></p>
+				<p><a href="#">微博UDC</a></p>
+				<p><a href="#">阿里妈妈MUX</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- 版权 -->
+	<div class="copy">
+		<p>Copyright © 2015.Company name All rights reserved.More Templates <a href="#">模板之家</a> - Collect from <a href="#">网页模板</a></p>
+	</div>
+	<div class="ttop">
+		<a href="#top"> 
+			<img src="./images/to-top1.png">
+		</a>
+	</div>
+	<script src="./bootstrap/js/jquery.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

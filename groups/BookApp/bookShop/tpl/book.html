@@ -1,0 +1,65 @@
+<ion-view view-title="商品列表">
+  <ion-content>
+  <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="search">
+        <div>
+          <select name="" ng-model="orderByType" style="height:40px;border:0;">
+              <option value="title" ng-selected="true">书名</option>
+              <option value="author">作者</option>
+              <option value="price">价格</option>
+              <option value="pudate">日期</option>
+          </select>
+      </div>
+      </label>
+    </div>
+    <ion-slide-box
+        does-continue="true"
+        auto-play="true"
+        slide-interval="2000"
+        show-pager="true"
+        pager-click="pagerClick(index)"
+        on-slide-changed="onSlideChanger($index)"
+        active-slide="1" 
+        style="border-top:1px solid #ccc;border-bottom:1px solid #ccc;box-shadow:0px 0px 5px #ccc"
+        >
+        <ion-slide>
+          <div class="box lunbo">
+            <img ng-src="{{IMAGEURL+'1.jpg'}}" alt="">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="box lunbo">
+             <img ng-src="{{IMAGEURL+'2.jpg'}}" alt="">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="box lunbo">
+            <img ng-src="{{IMAGEURL+'3.jpg'}}" alt="">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="box lunbo">
+            <img ng-src="{{IMAGEURL+'4.jpg'}}" alt="">
+          </div>
+        </ion-slide>
+    </ion-slide-box>
+    <ion-list type="list-inset" class="row">
+      <ion-item ng-repeat="book in books | filter:{title:search} | orderBy:orderByType" style="width:45%;float:left;margin:2%;" class="List">
+	      <a ng-href="#/tab/bookDetail/{{book.id}}" class="bookList">
+      		<img ng-src="{{IMAGEURL+book.images[0].image_name}}" alt="" class="full-image">
+    		<h1>{{book.title}}</h1>
+    		<h2 style="font:16px '微软雅黑';">{{book.author}}</h2>
+    		<p>¥{{book.price}}</p>
+    		<h2>{{book.pudate*1000 | date:"yyyy-MM-dd HH:mm:ss"}}</h2>
+	      </a>      		
+      </ion-item>
+    </ion-list>
+     <ion-infinite-scroll
+                on-infinite="loadMore()"
+                distance="1%"
+                ng-if="hasNextPage()">
+     </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,305 @@
+/***********页面头部*************/
+
+/*******
+页面为0-768px
+*******/
+@media screen and (max-width:768px){
+	.mynav{
+		background:#000;
+		border:0;
+		height:50px;
+	}
+	.navbar-header{
+		width:100%;
+		position:relative;
+	}
+	.navbar-toggle .icon-bar{
+		height:3px;
+		width:25px;
+		padding-left:0px
+	}
+	.navbar-toggle .icon-bar + .icon-bar{
+	  margin-top: 5px;
+	}
+	.navbar-toggle{
+		border:0;
+		float:left;
+		position:relative;
+		z-index:0;
+	}
+	.navbar-default .navbar-toggle {
+	  border-color:#000;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+	  background-color: #000;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	  background-color: #888;
+	}
+	.mylogo{
+		display:block;
+		width:250px;
+		height:50px;
+		margin:0 auto;
+		position:relative;
+		z-index:1;
+		background:url('../images/logo.gif') no-repeat center center;
+		background-size:cover;
+	}
+}
+/*******
+页面大于768p
+*******/
+@media screen and (min-width:768px){
+	header{
+		position:relative;
+	}
+	.mynav{
+		background:#000;
+		border:0;
+		height:120px;
+		box-sizing: border-box;
+		border-bottom:1px solid #717171;
+	}
+	.imgicon{
+		border-bottom:1px solid #717171;
+	}
+	.myfont{
+		font-size:40px;
+	}
+	.mynav>div:nth-of-type(2)>ul>li{
+		height:120px;
+		float:left;
+		width:20%;
+	}
+	/*导航栏*/
+	.bignav>li>a{
+		display:inline-block;
+		padding-top:25px;
+	}
+	.img{
+		text-align: center
+	}
+	.bignav>li:hover{
+		border:1px solid #717171;
+		border-bottom:1px solid #000;
+		background:#000;
+	}
+	.bignav>li:hover>a p,.bignav>li:hover>a .myfont{
+		color:#FFC627;
+	}
+	/*二级导航*/
+	#mnav,#fnav{
+		position:absolute;
+		top:120px;
+		left:0px;
+		width:100%;
+		display:none;
+		background:rgba(0,0,0,.9);
+		border:0px;
+		z-index:1000;
+	}
+	#pnav,#znav{
+		position:absolute;
+		top:120px;
+		left:0px;
+		width:100%;
+		display:none;
+		background:rgba(0,0,0,.9);
+		border:0px;
+		z-index:1000;
+	}
+	#pnav>div,#znav>div{
+		float:right;
+		padding:10px;
+		margin-right:3%;
+	}
+	#mnav>div,#fnav>div{
+		float:left;
+		padding:10px;
+		margin-left:3%;
+	}
+	#mnav>div:first-child,#fnav>div:first-child {
+		margin-left:35px;
+	}
+	#pnav>div:nth-child(3),#znav>div:nth-child(3){
+		display: inline-block;
+		margin-right:35px;
+
+	}
+	#mnav h4,#fnav h4{
+		font:13px '微软雅黑';
+		color:white;
+	}
+	#mnav a,#fnav a,#pnav a,#znav a{
+		font:12px '微软雅黑';
+		color:white;
+	}
+	#mnav a:hover,#fnav a:hover,#pnav a:hover,#znav a:hover{
+		color:#FFC627;
+	}
+	#mnav li,#fnav li{
+		list-style: disc;
+		color:white;
+		padding-top:5px;
+		margin-left:15px;
+	}
+	.mnavmouse:hover #mnav,.fnavmouse:hover #fnav,.pnavmouse:hover #pnav,.znavmouse:hover #znav{
+		display:block;
+	}
+}
+
+	
+/*******
+768内点击的小导航栏
+*******/
+.myfont{
+	font-family: 'myfont';
+	font-size:40px;
+	color: #888;
+}
+.myfont+p{
+	font:15px '微软雅黑';
+	color:#888;
+}
+/*下拉菜单*/
+#mynav{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+	background:rgba(0,0,0,.9);
+	display:none;
+}
+#mynav>ul>li:hover>a p,#mynav>ul>li:hover>a .myfont{
+	color:#FFC627;
+}	
+#mynav>ul>li{
+	width:80%;
+	margin:10px auto;
+	display:block;
+	text-align: center;
+	padding:4%;
+	border-bottom:2px solid #888;
+}
+#mynav>ul>li:last-child{
+	border-bottom:0px;
+}
+span:hover
+,p:hover
+,a:hover{
+	text-decoration: none;
+}
+.btn{
+	font-size:40px;
+	background: transparent;
+	border:0;
+	color:#888;
+	float: right;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus ,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	background: transparent;
+	border:0;
+	outline: none;
+	color:#888;
+}
+#myfnav,
+#mymnavol,
+#mymnavmc,
+#mymnavse,
+#mymnavha,
+#mymnavfu{
+	display:none;
+}
+#mymnav,
+#mymnavabout,
+#mymnavchina,
+#mymnavjoin,
+#mymnavsocial,
+#mymnavnews,
+#mymnavproblem{
+	display:none;
+}
+
+#mymnav div,
+#myfnav div{
+	width:86%;
+	margin:0 auto;
+	border-bottom:1px solid #888;
+	border-radius: 5px;
+}
+#mymnav h4>a,
+#myfnav h4>a
+{
+	display: inline-block;
+	font:16px '微软雅黑';
+	color:white;
+	padding:10px  20px;
+}
+#mymnav h4:hover,
+#myfnav h4:hover
+{
+	background:#FFC627;
+}
+#mymnav h4 span,
+#myfnav h4 span
+{
+	float:right;
+	color:white;
+	margin:10px;
+	cursor:pointer;
+}
+
+#mymnavabout a ,
+#mymnavchina a ,
+#mymnavjoin a,
+#mymnavsocial a,
+#mymnavnews a,
+#mymnavproblem a,
+#mymnavol a ,
+#mymnavmc a ,
+#mymnavse a,
+#mymnavha a,
+#mymnavfu a{
+	font:13px '微软雅黑';
+	color:#D8D8D8;
+}
+#mymnavabout li,
+#mymnavchina li,
+#mymnavjoin li,
+#mymnavsocial li,
+#mymnavnews li,
+#mymnavproblem li,
+#mymnavol li,
+#mymnavmc li,
+#mymnavse li,
+#mymnavha li,
+#mymnavfu li{
+	list-style: disc;
+	color:white;
+	padding:5px 0px 10px 0px;
+	margin-left:35px;
+}
+#mymnavabout li a:hover, 
+#mymnavchina li a:hover ,
+#mymnavjoin li a:hover,
+#mymnavsocial li a:hover,
+#mymnavnews li a:hover,
+#mymnavproblem li a:hover,
+#mymnavol li a:hover, 
+#mymnavmc li a:hover ,
+#mymnavse li a:hover,
+#mymnavha li a:hover,
+#mymnavfu li a:hover{
+	color:#FFC627;
+}

@@ -1,0 +1,174 @@
+.rmain{
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+	margin-top:10px;
+}
+.rword{
+	font:14px '微软雅黑';
+	color:#7B7B7B;
+	width:90%;
+	margin:30px auto;
+}
+.rword a{
+	font:14px '微软雅黑';
+	color:#7B7B7B;
+	margin-right:10px;
+	margin-left:10px;
+}
+.righttop{
+	position:fixed;
+	right:0px;
+	top:400px;
+}
+ /********
+ 菜单
+ *********/
+.nav{
+	width:100%;
+	height:85px;
+}
+.nav>ul>li{
+	float:left;
+	padding:20px 10px;
+	margin-left:20px;
+	margin-top:15px;
+
+}
+.nav>ul>li>a{
+	font:bold 15px '微软雅黑';
+	color:#7B7B7B;
+	padding-bottom:5px;
+}
+.nav>ul>li:hover>a{
+	color:#000;
+	border-bottom:2px solid #2AAD6F;
+}
+.personindex{
+	float:left;
+	margin:40px 0px 0px 80px;
+	font:bold 25px '微软雅黑';
+}
+.ppindex{
+	border-bottom:2px solid #2AAD6F;
+}
+ /********
+ 内容
+ *********/
+ .container{
+	width:90%;
+	margin:0 auto;
+	height:1000px;
+ }
+ /****
+ ****
+ 左边
+ *****
+ *****/
+ .cleft{
+	width:75%;
+	float:left;
+ }
+ .cltop{
+	border:1px solid #E2E2E2;
+	background:#FBFBFB;
+	padding: 30px;
+ }
+ .clbottom{
+ 	border-top:0;
+ }
+ .cltop p{
+ 	font:bold 16px '微软雅黑';
+ }
+ .cltop span{
+ 	font: 15px '微软雅黑';
+ 	margin-top:20px;
+ 	display:inline-block;
+ }
+ .map{
+ 	float:left;
+ 	width:80px;
+ 	height:80px;
+ 	border-radius: 50%;
+ 	background:#2AAD6E;
+ 	margin-top:30px;
+ }
+ .map div{
+ 	margin-top:20px;
+ 	margin-left:20px;
+	width:50px;
+	height:35px;
+ }
+ .mapone{
+ 	background: url('../images/map.png') -80px 5px;
+ }
+ .maptwo{
+	background: url('../images/map.png') -80px -33px;
+ }
+ .mapthree{
+	background: url('../images/map.png')  -80px -75px;
+ }
+ .mapfour{
+	background: url('../images/map.png')  -80px -120px;
+ }
+ .word{
+ 	float:left;
+ 	width:80%;
+ 	height:100px;
+ 	background:#EDEDED;
+ 	margin-left:20px;
+ 	margin-top:30px;
+ 	padding:20px;
+ 	position:relative;
+ }
+ .san{
+ 	position:absolute;
+ 	top:30px;
+ 	left:-20px;
+ 	border-right:10px solid #EDEDED;
+ 	border-top:10px solid transparent;
+ 	border-bottom:10px solid transparent;
+ 	border-left:10px solid transparent;
+ }
+ .word a{
+ 	display:block;
+ 	color:#1F8657;
+ 	font: 15px '微软雅黑';
+ 	margin-top:20px;
+ }
+ /****
+ ****
+ 右边
+ *****
+ *****/
+ .cright{
+	float:left;
+ }
+ .cright p{
+ 	font:bold 16px '微软雅黑';
+ 	margin:10px;
+ }
+ .jifen{
+	width:230px;
+	height:80px;
+	background:#EDEDED;
+	padding:20px;
+ }
+ .dol{
+ 	width:60px;
+ 	height:60px;
+ 	border-radius:50%;
+ 	background:#2AAD6F url('../images/map.png') -120px -610px;
+ }
+ .jifen>div{
+ 	float:left;
+ }
+ .jifen p{
+ 	margin-left:20px;
+	font: 15px '微软雅黑';
+ }
+ .jifen a{
+ 	font: 15px '微软雅黑';
+ 	color:#2AAD6F;
+ 	margin-left:20px;
+ }
